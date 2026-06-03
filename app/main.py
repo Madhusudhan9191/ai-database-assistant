@@ -66,11 +66,11 @@ def ask_question(data: UserQuestion):
         }
 
     except Exception as e:
-
         raise HTTPException(
-            status_code=500,
-            detail=str(e)
-        )
+          status_code=500,
+           detail=str(e)
+    )
+    
     
 @app.get("/history")
 def history():

@@ -1,61 +1,64 @@
-# AI Database Assistant V1.0
+# AI Database Assistant
 
-## Overview
-
-AI Database Assistant is a full-stack AI-powered application that converts natural language questions into SQL queries using Groq LLM. The application dynamically discovers database schemas, generates SQL queries, executes them securely against PostgreSQL, and displays the results through a React frontend.
-
-The project supports complex SQL generation including joins, aggregations, ranking queries, and business analytics questions.
-
----
+AI-powered Database Assistant that converts natural language questions into SQL queries using Groq LLM, executes them on PostgreSQL, and displays results through a React frontend.
 
 ## Features
 
-### AI Features
-
-* Natural Language to SQL Conversion
-* Groq LLM Integration
-* Dynamic Schema Discovery
-* Multi-table JOIN Generation
-* Aggregation Query Support
-* Business Analytics Query Support
-
-### Backend Features
-
-* FastAPI REST APIs
-* PostgreSQL Integration
-* Query Validation
-* Query History Tracking
-* Execution Time Monitoring
-* Analytics Endpoints
-
-### Frontend Features
-
-* React + Vite
-* Axios API Integration
-* Dynamic Results Table
-* Loading Indicators
-* Error Handling
-* Recent Query History
-* Auto-run Recent Queries
-* Query Statistics Dashboard
+* Natural Language to SQL using Groq LLM
+* PostgreSQL database integration
+* Dynamic database schema discovery
+* Query execution and result display
+* Query history tracking
+* Execution time tracking
+* Recent query suggestions
+* React frontend dashboard
+* FastAPI backend API
+* Dockerized backend
+* Dockerized frontend
+* Docker Compose multi-container setup
 
 ---
 
 ## Architecture
 
-```text
+User Question
+
+↓
+
 React Frontend
-       ↓
+
+↓
+
 FastAPI Backend
-       ↓
+
+↓
+
 Groq LLM
-       ↓
+
+↓
+
+Generated SQL
+
+↓
+
 PostgreSQL Database
-```
+
+↓
+
+Results Returned to Frontend
 
 ---
 
-## Technology Stack
+## Tech Stack
+
+### Backend
+
+* Python
+* FastAPI
+* PostgreSQL
+* Psycopg2
+* Groq API
+* Pydantic
 
 ### Frontend
 
@@ -63,29 +66,20 @@ PostgreSQL Database
 * Vite
 * Axios
 
-### Backend
+### DevOps
 
-* FastAPI
-* Python
-* Pydantic
-
-### Database
-
-* PostgreSQL
-* Psycopg2
-
-### AI
-
-* Groq API
-* Llama Models
+* Docker
+* Docker Compose
+* Git
+* GitHub
 
 ---
 
 ## Project Structure
 
 ```text
-AI-Database-Assistant/
-
+AI-db-assistant/
+│
 ├── app/
 │   ├── db/
 │   │   └── database.py
@@ -95,26 +89,24 @@ AI-Database-Assistant/
 │   │
 │   ├── services/
 │   │   ├── ai_service.py
-│   │   ├── query_service.py
 │   │   ├── history_service.py
+│   │   ├── query_service.py
 │   │   └── schema_service.py
 │   │
+│   ├── config.py
 │   └── main.py
 │
 ├── ai-db-frontend/
 │   ├── src/
-│   │   ├── components/
-│   │   ├── App.jsx
-│   │   └── api.js
-│   │
+│   ├── Dockerfile
 │   └── package.json
 │
+├── Dockerfile
+├── docker-compose.yml
 ├── requirements.txt
-├── README.md
-└── .env
+├── .env.example
+└── README.md
 ```
-
----
 
 ## API Endpoints
 
@@ -124,7 +116,9 @@ AI-Database-Assistant/
 GET /
 ```
 
-### Ask AI
+Returns API status.
+
+### Ask Question
 
 ```http
 POST /ask
@@ -138,7 +132,16 @@ Request:
 }
 ```
 
----
+Response:
+
+```json
+{
+  "question": "show all customers",
+  "generated_sql": "SELECT * FROM customers;",
+  "execution_time_ms": 7,
+  "data": [...]
+}
+```
 
 ### Query History
 
@@ -146,15 +149,11 @@ Request:
 GET /history
 ```
 
----
-
-### Query Count
+### History Count
 
 ```http
 GET /history/count
 ```
-
----
 
 ### Latest Queries
 
@@ -164,105 +163,56 @@ GET /history/latest
 
 ---
 
-## Example Questions
+## Environment Variables
 
-```text
-show all customers
+Create a `.env` file in the project root.
 
-show customer emails
+```env
+GROQ_API_KEY=your_groq_api_key
 
-show all orders
-
-show customer names and products they ordered
-
-show total orders for each customer
-
-which customer placed the most orders
-
-show the customer who spent the most money
+DB_NAME=ai_db_assistant
+DB_USER=your_username
+DB_HOST=localhost
+DB_PORT=5432
 ```
 
 ---
 
-## Security
+## Running Locally
 
-The application executes only SELECT statements.
-
-This prevents accidental or malicious execution of:
-
-* INSERT
-* UPDATE
-* DELETE
-* DROP
-* ALTER
-* TRUNCATE
-
-and keeps the database in read-only mode.
-
----
-
-## Monitoring
-
-The system automatically tracks:
-
-* Query History
-* Generated SQL
-* Execution Time
-* Query Statistics
-
----
-
-## How to Run Backend
-
-Create a virtual environment:
+### Backend
 
 ```bash
-python -m venv venv
 source venv/bin/activate
-```
 
-Install dependencies:
-
-```bash
 pip install -r requirements.txt
-```
 
-Start FastAPI:
-
-```bash
 uvicorn app.main:app --reload
 ```
 
-Swagger:
+Backend:
+
+```text
+http://127.0.0.1:8000
+```
+
+Swagger Docs:
 
 ```text
 http://127.0.0.1:8000/docs
 ```
 
----
-
-## How to Run Frontend
-
-Navigate to frontend:
+### Frontend
 
 ```bash
 cd ai-db-frontend
-```
 
-Install dependencies:
-
-```bash
 npm install
-npm install axios
-```
 
-Start React:
-
-```bash
 npm run dev
 ```
 
-Frontend URL:
+Frontend:
 
 ```text
 http://localhost:5173
@@ -270,20 +220,74 @@ http://localhost:5173
 
 ---
 
-## Future Enhancements
+## Running with Docker
 
-### V1.1
+Build and run the entire application:
 
-* AI Insights Generation
-* Charts and Visualizations
-* Analytics Dashboard
+```bash
+docker compose up --build
+```
 
-### V2.0
+Backend:
 
-* Predictive Analytics
-* Revenue Forecasting
-* Customer Churn Prediction
-* Business Intelligence Features
+```text
+http://localhost:8000
+```
+
+Frontend:
+
+```text
+http://localhost:5173
+```
+
+Stop containers:
+
+```bash
+docker compose down
+```
+
+---
+
+## Example Questions
+
+```text
+show all customers
+
+show customer count
+
+show total orders for each customer
+
+which customer placed the most orders
+
+show all orders
+
+show customers with their orders
+```
+
+---
+
+## Current Version
+
+### V1.0
+
+Implemented:
+
+* Natural Language to SQL
+* PostgreSQL Query Execution
+* Query History
+* Recent Queries
+* Execution Time Tracking
+* React Frontend
+* Dockerized Backend
+* Dockerized Frontend
+* Docker Compose
+
+### Planned (V1.1)
+
+* AI-generated insights from query results
+* Query result summarization
+* Business analytics suggestions
+* Data trend detection
 
 ---
 
@@ -293,4 +297,4 @@ Madhu Sudhan Suravaram
 
 B.Tech Computer Science (AI & ML)
 
-AI Database Assistant V1.0
+AI Database Assistant Portfolio Project

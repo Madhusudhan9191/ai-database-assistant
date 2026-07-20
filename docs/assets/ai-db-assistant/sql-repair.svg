@@ -1,0 +1,265 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+    <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="bg-grad" cx="50%" cy="50%" r="70%">
+        <stop offset="0%" stop-color="#0A1128" />
+        <stop offset="100%" stop-color="#05070F" />
+    </radialGradient>
+    
+    <!-- Neon Gradients -->
+    <linearGradient id="blue-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#3B82F6" />
+        <stop offset="100%" stop-color="#06B6D4" />
+    </linearGradient>
+    <linearGradient id="emerald-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#10B981" />
+        <stop offset="100%" stop-color="#34D399" />
+    </linearGradient>
+    <linearGradient id="purple-pink" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#8B5CF6" />
+        <stop offset="100%" stop-color="#EC4899" />
+    </linearGradient>
+    <linearGradient id="purple-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#7C3AED" />
+        <stop offset="100%" stop-color="#2563EB" />
+    </linearGradient>
+    <linearGradient id="yellow-orange" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#F59E0B" />
+        <stop offset="100%" stop-color="#EF4444" />
+    </linearGradient>
+    
+    <!-- Glassmorphic Gradients -->
+    <linearGradient id="glass" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#ffffff" stop-opacity="0.08" />
+        <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02" />
+    </linearGradient>
+    <linearGradient id="glass-border" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#ffffff" stop-opacity="0.15" />
+        <stop offset="100%" stop-color="#ffffff" stop-opacity="0.03" />
+    </linearGradient>
+    
+    <!-- Neon Glow Filters -->
+    <filter id="glow-cyan" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="6" result="blur" />
+        <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+        </feMerge>
+    </filter>
+    <filter id="glow-blue" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="8" result="blur" />
+        <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+        </feMerge>
+    </filter>
+    <filter id="glow-purple" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="8" result="blur" />
+        <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+        </feMerge>
+    </filter>
+    <filter id="glow-emerald" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="6" result="blur" />
+        <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+        </feMerge>
+    </filter>
+    <filter id="glow-red" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="6" result="blur" />
+        <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+        </feMerge>
+    </filter>
+    
+    <!-- Drop Shadow for Panels -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+        <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+</defs>
+
+    <style>
+    text {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        fill: #FFFFFF;
+    }
+    .title { font-weight: 800; }
+    .subtitle { fill: #94A3B8; font-weight: 500; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+    .dim { fill: #64748B; }
+    .cyan-text { fill: #22D3EE; }
+    .blue-text { fill: #38BDF8; }
+    .emerald-text { fill: #34D399; }
+    .purple-text { fill: #C084FC; }
+    .red-text { fill: #F87171; }
+    .yellow-text { fill: #FBBF24; }
+    .border-stroke { stroke: rgba(255, 255, 255, 0.08); stroke-width: 1px; }
+    .border-stroke-glow { stroke: #06B6D4; stroke-width: 1.5px; filter: url(#glow-cyan); }
+    .grid-line { stroke: rgba(255, 255, 255, 0.03); stroke-width: 1px; }
+</style>
+
+    <!-- Background -->
+    <rect width="1920" height="1080" fill="url(#bg-grad)" />
+    <line x1="0" y1="0" x2="0" y2="1080" class="grid-line" />
+<line x1="100" y1="0" x2="100" y2="1080" class="grid-line" />
+<line x1="200" y1="0" x2="200" y2="1080" class="grid-line" />
+<line x1="300" y1="0" x2="300" y2="1080" class="grid-line" />
+<line x1="400" y1="0" x2="400" y2="1080" class="grid-line" />
+<line x1="500" y1="0" x2="500" y2="1080" class="grid-line" />
+<line x1="600" y1="0" x2="600" y2="1080" class="grid-line" />
+<line x1="700" y1="0" x2="700" y2="1080" class="grid-line" />
+<line x1="800" y1="0" x2="800" y2="1080" class="grid-line" />
+<line x1="900" y1="0" x2="900" y2="1080" class="grid-line" />
+<line x1="1000" y1="0" x2="1000" y2="1080" class="grid-line" />
+<line x1="1100" y1="0" x2="1100" y2="1080" class="grid-line" />
+<line x1="1200" y1="0" x2="1200" y2="1080" class="grid-line" />
+<line x1="1300" y1="0" x2="1300" y2="1080" class="grid-line" />
+<line x1="1400" y1="0" x2="1400" y2="1080" class="grid-line" />
+<line x1="1500" y1="0" x2="1500" y2="1080" class="grid-line" />
+<line x1="1600" y1="0" x2="1600" y2="1080" class="grid-line" />
+<line x1="1700" y1="0" x2="1700" y2="1080" class="grid-line" />
+<line x1="1800" y1="0" x2="1800" y2="1080" class="grid-line" />
+<line x1="1900" y1="0" x2="1900" y2="1080" class="grid-line" />
+<line x1="0" y1="0" x2="1920" y2="0" class="grid-line" />
+<line x1="0" y1="100" x2="1920" y2="100" class="grid-line" />
+<line x1="0" y1="200" x2="1920" y2="200" class="grid-line" />
+<line x1="0" y1="300" x2="1920" y2="300" class="grid-line" />
+<line x1="0" y1="400" x2="1920" y2="400" class="grid-line" />
+<line x1="0" y1="500" x2="1920" y2="500" class="grid-line" />
+<line x1="0" y1="600" x2="1920" y2="600" class="grid-line" />
+<line x1="0" y1="700" x2="1920" y2="700" class="grid-line" />
+<line x1="0" y1="800" x2="1920" y2="800" class="grid-line" />
+<line x1="0" y1="900" x2="1920" y2="900" class="grid-line" />
+<line x1="0" y1="1000" x2="1920" y2="1000" class="grid-line" />
+
+    
+    <!-- Top Header -->
+    <g>
+        <rect width="1920" height="60" fill="rgba(15, 23, 42, 0.8)" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
+        <text x="30" y="38" font-size="22" font-weight="bold">🔧 Self-Healing SQL Repair Interface</text>
+        <text x="1650" y="36" font-size="16" class="dim">Repair Engine: Groq LLM</text>
+    </g>
+    
+    <!-- 3 COLUMN SPLIT WORKSPACE -->
+    
+    <!-- Left Pane: Original SQL (Invalid) -->
+    <g transform="translate(30, 90)">
+        <rect width="580" height="940" rx="12" fill="rgba(15, 23, 42, 0.6)" stroke="rgba(255, 255, 255, 0.05)" stroke-width="1.5" />
+        <text x="30" y="45" font-size="18" font-weight="bold" fill="#EF4444">❌ Original SQL &amp; Error feedback</text>
+        <line x1="30" y1="65" x2="550" y2="65" stroke="rgba(255,255,255,0.05)" />
+        
+        <!-- Code editor representation -->
+        <g transform="translate(30, 100)">
+            <rect width="520" height="320" rx="8" fill="#030712" stroke="rgba(255,255,255,0.05)" />
+            <g transform="translate(20, 45)" class="mono" font-size="14">
+                <text y="0"><tspan class="purple-text">SELECT</tspan> email, total_rev</text>
+                <text y="30"><tspan class="purple-text">FROM</tspan> order_details</text>
+                <text y="60"><tspan class="purple-text">WHERE</tspan> signup_yr = <tspan class="emerald-text">2025</tspan>;</text>
+                
+                <!-- Underline error -->
+                <path d="M 40 45 L 140 45" stroke="#EF4444" stroke-width="2" stroke-dasharray="2 2" filter="url(#glow-red)" />
+            </g>
+        </g>
+        
+        <!-- Error message box -->
+        <g transform="translate(30, 460)">
+            <text x="0" y="20" font-size="15" font-weight="bold" fill="#EF4444">Exception Feedback Loop</text>
+            <rect y="35" width="520" height="400" rx="8" fill="rgba(239, 68, 68, 0.05)" stroke="#EF4444" stroke-opacity="0.3" />
+            <g transform="translate(20, 80)" class="mono" font-size="13" fill="#F87171">
+                <text y="0">PG::UndefinedTableError:</text>
+                <text y="30">ERROR: relation "order_details" does not exist</text>
+                <text y="65">LINE 2: FROM order_details</text>
+                <text y="90">             ^</text>
+                <text y="130">HINT: Perhaps you meant to reference the</text>
+                <text y="155">table "orders".</text>
+            </g>
+        </g>
+    </g>
+    
+    <!-- Center Pane: Groq AI Repair Engine -->
+    <g transform="translate(640, 90)">
+        <rect width="640" height="940" rx="12" fill="rgba(15, 23, 42, 0.6)" stroke="rgba(255, 255, 255, 0.05)" stroke-width="1.5" />
+        <text x="30" y="45" font-size="18" font-weight="bold" fill="url(#purple-pink)">🧠 Groq AI SQL Repair Agent</text>
+        <line x1="30" y1="65" x2="610" y2="65" stroke="rgba(255,255,255,0.05)" />
+        
+        <g transform="translate(30, 90)" font-size="14">
+            <!-- Detection reasoning card -->
+            <rect width="580" height="240" rx="10" fill="rgba(139, 92, 246, 0.05)" stroke="rgba(139, 92, 246, 0.2)" />
+            <text x="25" y="35" font-size="16" font-weight="bold" fill="#C084FC">Error Analysis &amp; Schema Matcher</text>
+            <text x="25" y="80" class="dim">1. Detected relation missing error on <tspan fill="#FFF" class="mono">order_details</tspan>.</text>
+            <text x="25" y="110" class="dim">2. Queried Schema Understanding metadata registry.</text>
+            <text x="25" y="140" class="dim">3. Found target match: <tspan fill="#34D399" class="mono">orders</tspan> (99% probability match).</text>
+            <text x="25" y="170" class="dim">4. Found column match: <tspan fill="#34D399" class="mono">total_amount</tspan> maps to <tspan fill="#FFF" class="mono">total_rev</tspan>.</text>
+            
+            <!-- Repair Actions list -->
+            <text x="0" y="290" font-size="16" font-weight="bold">Proposed Transformations</text>
+            
+            <!-- Action 1 -->
+            <g transform="translate(0, 315)">
+                <rect width="580" height="80" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)" />
+                <text x="20" y="32" font-weight="bold">Replace table order_details with orders</text>
+                <text x="20" y="58" font-size="12" class="dim">Confidence: 99.4%</text>
+            </g>
+            
+            <!-- Action 2 -->
+            <g transform="translate(0, 415)">
+                <rect width="580" height="80" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)" />
+                <text x="20" y="32" font-weight="bold">Map total_rev column to SUM(total_amount)</text>
+                <text x="20" y="58" font-size="12" class="dim">Confidence: 96.1%</text>
+            </g>
+            
+            <!-- Action 3 -->
+            <g transform="translate(0, 515)">
+                <rect width="580" height="80" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)" />
+                <text x="20" y="32" font-weight="bold">Resolve signup_yr using order_date extraction</text>
+                <text x="20" y="58" font-size="12" class="dim">Confidence: 98.8%</text>
+            </g>
+            
+            <!-- Healing Loop status badge -->
+            <rect y="640" width="580" height="120" rx="10" fill="rgba(16, 185, 129, 0.08)" stroke="#10B981" />
+            <text x="30" y="50" font-size="18" font-weight="bold" fill="#10B981">✓ Healed Successfully</text>
+            <text x="30" y="85" font-size="14" fill="#94A3B8">Rewritten query passes safety, parser, and execution validator.</text>
+        </g>
+    </g>
+    
+    <!-- Right Pane: Corrected SQL (Healed) -->
+    <g transform="translate(1310, 90)">
+        <rect width="580" height="940" rx="12" fill="rgba(15, 23, 42, 0.6)" stroke="rgba(255, 255, 255, 0.05)" stroke-width="1.5" />
+        <text x="30" y="45" font-size="18" font-weight="bold" fill="#10B981">✓ Corrected &amp; Verified SQL</text>
+        <line x1="30" y1="65" x2="550" y2="65" stroke="rgba(255,255,255,0.05)" />
+        
+        <!-- Corrected SQL Code block -->
+        <g transform="translate(30, 100)">
+            <rect width="520" height="320" rx="8" fill="#030712" stroke="rgba(16, 185, 129, 0.4)" stroke-width="2" />
+            <g transform="translate(20, 45)" class="mono" font-size="14">
+                <text y="0"><tspan class="purple-text">SELECT</tspan> u.email, <tspan class="purple-text">SUM</tspan>(o.total_amount) <tspan class="purple-text">AS</tspan> total_rev</text>
+                <text y="30"><tspan class="purple-text">FROM</tspan> orders o</text>
+                <text y="60"><tspan class="purple-text">JOIN</tspan> users u <tspan class="purple-text">ON</tspan> o.user_id = u.id</text>
+                <text y="90"><tspan class="purple-text">WHERE</tspan> EXTRACT(<tspan class="purple-text">YEAR FROM</tspan> o.order_date) = <tspan class="emerald-text">2025</tspan></text>
+                <text y="120"><tspan class="purple-text">GROUP BY</tspan> <tspan class="emerald-text">1</tspan>;</text>
+            </g>
+        </g>
+        
+        <!-- Execution metrics -->
+        <g transform="translate(30, 460)">
+            <text x="0" y="20" font-size="15" font-weight="bold">Healed Performance Metrics</text>
+            <rect y="35" width="520" height="400" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)" />
+            
+            <g transform="translate(30, 80)" font-size="14">
+                <text y="0" class="dim">Execution Time: <tspan fill="#10B981" font-weight="bold">14ms</tspan></text>
+                <line x1="-10" y1="20" x2="470" y2="20" stroke="rgba(255,255,255,0.03)" />
+                
+                <text y="50" class="dim">Rows returned: <tspan fill="#FFF" font-weight="bold">82 rows</tspan></text>
+                <line x1="-10" y1="70" x2="470" y2="70" stroke="rgba(255,255,255,0.03)" />
+                
+                <text y="100" class="dim">Security Validation: <tspan fill="#10B981" font-weight="bold">Passed (Read-Only)</tspan></text>
+                <line x1="-10" y1="120" x2="470" y2="120" stroke="rgba(255,255,255,0.03)" />
+                
+                <text y="150" class="dim">Engine Sync Status: <tspan fill="#38BDF8">Commit OK</tspan></text>
+            </g>
+        </g>
+    </g>
+</svg>

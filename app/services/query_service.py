@@ -1,22 +1,49 @@
+from decimal import Decimal
+
 from app.db.database import get_connection
 
 
+def convert_decimal(value):
+
+    if isinstance(value, Decimal):
+        return float(value)
+
+    return value
+
+
 def execute_query(sql):
+    sql = sql.strip().rstrip(";")
     conn = get_connection()
     cursor = conn.cursor()
 
-    cursor.execute(sql)
+    try:
 
-    columns = [desc[0] for desc in cursor.description]
+        cursor.execute(sql)
 
-    rows = cursor.fetchall()
+        columns = [
+            desc[0]
+            for desc in cursor.description
+        ]
 
-    result = [
-        dict(zip(columns, row))
-        for row in rows
-    ]
+        rows = cursor.fetchall()
 
-    cursor.close()
-    conn.close()
+        result = []
 
-    return result
+        for row in rows:
+
+            row_dict = {}
+
+            for col, value in zip(columns, row):
+
+                row_dict[col] = convert_decimal(
+                    value
+                )
+
+            result.append(row_dict)
+
+        return result
+
+    finally:
+
+        cursor.close()
+        conn.close()

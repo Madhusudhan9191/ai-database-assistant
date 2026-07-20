@@ -1,0 +1,119 @@
+/* ========================================
+   RightSidebar.css — Past queries list
+   ======================================== */
+
+.right-sidebar {
+  width: 260px;
+  background: var(--bg-main);
+  color: var(--text-main);
+  padding: 20px;
+  transition: 0.3s;
+  overflow-y: auto;
+}
+
+.right-sidebar.closed {
+  width: 60px;
+}
+
+.chat-history-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.02);
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.chat-history-item:hover {
+  background: var(--hover-bg);
+}
+
+.chat-history-item.selected {
+  background: rgba(239, 68, 68, 0.05);
+  border-color: rgba(239, 68, 68, 0.2);
+}
+
+.active-chat {
+  background: rgba(37, 99, 235, 0.2);
+  border: 1px solid rgba(37, 99, 235, 0.4);
+}
+
+.history-item-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  overflow: hidden;
+}
+
+.history-checkbox {
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  accent-color: #3b82f6;
+  flex-shrink: 0;
+}
+
+.history-text {
+  font-size: 13.5px;
+  color: var(--text-main);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.delete-item-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  font-size: 18px;
+  opacity: 0;
+  transition: opacity 0.2s, color 0.2s;
+  padding: 0 4px;
+}
+
+.chat-history-item:hover .delete-item-btn {
+  opacity: 1;
+}
+
+.delete-item-btn:hover {
+  color: #ef4444;
+}
+
+/* --- Bulk Actions --- */
+.bulk-actions-bar {
+  margin-bottom: 14px;
+  display: flex;
+}
+
+.bulk-delete-btn {
+  width: 100%;
+  background: rgba(239, 68, 68, 0.15);
+  color: #ef4444;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 12.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.bulk-delete-btn:hover {
+  background: rgba(239, 68, 68, 0.25);
+  border-color: #ef4444;
+}
+
+.empty-history-text {
+  color: var(--text-secondary);
+  font-size: 13.5px;
+  font-style: italic;
+  text-align: center;
+  margin-top: 20px;
+}
+

@@ -1,0 +1,273 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+    <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="bg-grad" cx="50%" cy="50%" r="70%">
+        <stop offset="0%" stop-color="#0A1128" />
+        <stop offset="100%" stop-color="#05070F" />
+    </radialGradient>
+    
+    <!-- Neon Gradients -->
+    <linearGradient id="blue-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#3B82F6" />
+        <stop offset="100%" stop-color="#06B6D4" />
+    </linearGradient>
+    <linearGradient id="emerald-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#10B981" />
+        <stop offset="100%" stop-color="#34D399" />
+    </linearGradient>
+    <linearGradient id="purple-pink" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#8B5CF6" />
+        <stop offset="100%" stop-color="#EC4899" />
+    </linearGradient>
+    <linearGradient id="purple-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#7C3AED" />
+        <stop offset="100%" stop-color="#2563EB" />
+    </linearGradient>
+    <linearGradient id="yellow-orange" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#F59E0B" />
+        <stop offset="100%" stop-color="#EF4444" />
+    </linearGradient>
+    
+    <!-- Glassmorphic Gradients -->
+    <linearGradient id="glass" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#ffffff" stop-opacity="0.08" />
+        <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02" />
+    </linearGradient>
+    <linearGradient id="glass-border" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#ffffff" stop-opacity="0.15" />
+        <stop offset="100%" stop-color="#ffffff" stop-opacity="0.03" />
+    </linearGradient>
+    
+    <!-- Neon Glow Filters -->
+    <filter id="glow-cyan" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="6" result="blur" />
+        <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+        </feMerge>
+    </filter>
+    <filter id="glow-blue" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="8" result="blur" />
+        <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+        </feMerge>
+    </filter>
+    <filter id="glow-purple" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="8" result="blur" />
+        <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+        </feMerge>
+    </filter>
+    <filter id="glow-emerald" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="6" result="blur" />
+        <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+        </feMerge>
+    </filter>
+    <filter id="glow-red" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="6" result="blur" />
+        <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+        </feMerge>
+    </filter>
+    
+    <!-- Drop Shadow for Panels -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+        <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+</defs>
+
+    <style>
+    text {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        fill: #FFFFFF;
+    }
+    .title { font-weight: 800; }
+    .subtitle { fill: #94A3B8; font-weight: 500; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+    .dim { fill: #64748B; }
+    .cyan-text { fill: #22D3EE; }
+    .blue-text { fill: #38BDF8; }
+    .emerald-text { fill: #34D399; }
+    .purple-text { fill: #C084FC; }
+    .red-text { fill: #F87171; }
+    .yellow-text { fill: #FBBF24; }
+    .border-stroke { stroke: rgba(255, 255, 255, 0.08); stroke-width: 1px; }
+    .border-stroke-glow { stroke: #06B6D4; stroke-width: 1.5px; filter: url(#glow-cyan); }
+    .grid-line { stroke: rgba(255, 255, 255, 0.03); stroke-width: 1px; }
+</style>
+
+    <!-- Background -->
+    <rect width="1920" height="1080" fill="url(#bg-grad)" />
+    <line x1="0" y1="0" x2="0" y2="1080" class="grid-line" />
+<line x1="100" y1="0" x2="100" y2="1080" class="grid-line" />
+<line x1="200" y1="0" x2="200" y2="1080" class="grid-line" />
+<line x1="300" y1="0" x2="300" y2="1080" class="grid-line" />
+<line x1="400" y1="0" x2="400" y2="1080" class="grid-line" />
+<line x1="500" y1="0" x2="500" y2="1080" class="grid-line" />
+<line x1="600" y1="0" x2="600" y2="1080" class="grid-line" />
+<line x1="700" y1="0" x2="700" y2="1080" class="grid-line" />
+<line x1="800" y1="0" x2="800" y2="1080" class="grid-line" />
+<line x1="900" y1="0" x2="900" y2="1080" class="grid-line" />
+<line x1="1000" y1="0" x2="1000" y2="1080" class="grid-line" />
+<line x1="1100" y1="0" x2="1100" y2="1080" class="grid-line" />
+<line x1="1200" y1="0" x2="1200" y2="1080" class="grid-line" />
+<line x1="1300" y1="0" x2="1300" y2="1080" class="grid-line" />
+<line x1="1400" y1="0" x2="1400" y2="1080" class="grid-line" />
+<line x1="1500" y1="0" x2="1500" y2="1080" class="grid-line" />
+<line x1="1600" y1="0" x2="1600" y2="1080" class="grid-line" />
+<line x1="1700" y1="0" x2="1700" y2="1080" class="grid-line" />
+<line x1="1800" y1="0" x2="1800" y2="1080" class="grid-line" />
+<line x1="1900" y1="0" x2="1900" y2="1080" class="grid-line" />
+<line x1="0" y1="0" x2="1920" y2="0" class="grid-line" />
+<line x1="0" y1="100" x2="1920" y2="100" class="grid-line" />
+<line x1="0" y1="200" x2="1920" y2="200" class="grid-line" />
+<line x1="0" y1="300" x2="1920" y2="300" class="grid-line" />
+<line x1="0" y1="400" x2="1920" y2="400" class="grid-line" />
+<line x1="0" y1="500" x2="1920" y2="500" class="grid-line" />
+<line x1="0" y1="600" x2="1920" y2="600" class="grid-line" />
+<line x1="0" y1="700" x2="1920" y2="700" class="grid-line" />
+<line x1="0" y1="800" x2="1920" y2="800" class="grid-line" />
+<line x1="0" y1="900" x2="1920" y2="900" class="grid-line" />
+<line x1="0" y1="1000" x2="1920" y2="1000" class="grid-line" />
+
+    
+    <!-- Top Header -->
+    <g>
+        <rect width="1920" height="60" fill="rgba(15, 23, 42, 0.8)" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
+        <text x="30" y="38" font-size="22" font-weight="bold">🗂️ Premium Database Schema Explorer</text>
+        <text x="1650" y="36" font-size="16" class="dim">Active Schema: public</text>
+    </g>
+    
+    <!-- LEFT PANEL: Tree view -->
+    <g transform="translate(10, 70)">
+        <rect width="360" height="1000" rx="12" fill="rgba(15, 23, 42, 0.6)" stroke="rgba(255, 255, 255, 0.05)" stroke-width="1.5" />
+        <text x="25" y="40" font-size="18" font-weight="bold" fill="#38BDF8">Object Tree</text>
+        
+        <g transform="translate(25, 80)" font-size="14">
+            <text y="0">📂 Tables (12)</text>
+            <text x="20" y="30">田 users</text>
+            <text x="20" y="60" fill="#38BDF8">田 orders</text>
+            <text x="40" y="85" class="dim">⚙️ Columns (12)</text>
+            <text x="40" y="110" class="dim">🔑 Keys (3)</text>
+            <text x="40" y="135" class="dim">⚡ Triggers (0)</text>
+            
+            <text x="20" y="170">田 products</text>
+            <text x="20" y="200">田 categories</text>
+            <text x="20" y="230">田 transactions</text>
+            <text x="20" y="260">田 user_roles</text>
+            
+            <text y="310">📂 Views (3)</text>
+            <text x="20" y="340">👁️ active_sessions</text>
+            <text x="20" y="370">👁️ monthly_sales_summary</text>
+            
+            <text y="420">📂 Functions (8)</text>
+            <text x="20" y="450">ƒ calculate_vat(decimal)</text>
+            <text x="20" y="480">ƒ update_modified_column()</text>
+            
+            <text y="530">📂 Indexes (34)</text>
+            <text x="20" y="560">idx_orders_user_date</text>
+        </g>
+    </g>
+    
+    <!-- CENTER PANEL: Table Detail -->
+    <g transform="translate(380, 70)">
+        <rect width="1120" height="1000" rx="12" fill="rgba(15, 23, 42, 0.4)" stroke="rgba(255, 255, 255, 0.05)" stroke-width="1.5" />
+        
+        <!-- Table metadata header -->
+        <g transform="translate(40, 40)">
+            <text x="0" y="25" font-size="24" font-weight="bold">Table: <tspan fill="#38BDF8">orders</tspan></text>
+            <text x="0" y="55" font-size="14" class="dim">Estimated rows: <tspan fill="#FFF">8,941,200</tspan> | Primary Key: <tspan fill="#22D3EE">id</tspan></text>
+        </g>
+        
+        <!-- Columns details Grid -->
+        <g transform="translate(40, 130)">
+            <text x="0" y="25" font-size="18" font-weight="bold" fill="#38BDF8">Columns Definition</text>
+            <rect y="40" width="1040" height="420" rx="12" fill="rgba(15, 23, 42, 0.4)" stroke="rgba(255, 255, 255, 0.05)" />
+            
+            <!-- Grid Header -->
+            <rect x="0" y="40" width="1040" height="40" fill="rgba(255,255,255,0.02)" />
+            <text x="30" y="65" font-size="14" font-weight="bold" fill="#94A3B8">Column Name</text>
+            <text x="250" y="65" font-size="14" font-weight="bold" fill="#94A3B8">Data Type</text>
+            <text x="450" y="65" font-size="14" font-weight="bold" fill="#94A3B8">Constraints</text>
+            <text x="650" y="65" font-size="14" font-weight="bold" fill="#94A3B8">Nullable</text>
+            <text x="850" y="65" font-size="14" font-weight="bold" fill="#94A3B8">Default Value</text>
+            
+            <g transform="translate(30, 110)" font-size="14">
+                <text y="0">id</text> <text x="220" y="0" class="mono">INT</text> <text x="420" y="0" class="cyan-text">PRIMARY KEY</text> <text x="620" y="0">NO</text> <text x="820" y="0" class="mono">nextval('orders_id_seq')</text>
+                <line x1="-30" y1="15" x2="1010" y2="15" stroke="rgba(255,255,255,0.03)" />
+                
+                <text y="40">user_id</text> <text x="220" y="40" class="mono">INT</text> <text x="420" y="40" class="purple-text">FOREIGN KEY (users.id)</text> <text x="620" y="40">NO</text> <text x="820" y="40" class="mono">NULL</text>
+                <line x1="-30" y1="55" x2="1010" y2="55" stroke="rgba(255,255,255,0.03)" />
+                
+                <text y="80">total_amount</text> <text x="220" y="80" class="mono">NUMERIC(12,2)</text> <text x="420" y="80">CHECK (total_amount >= 0)</text> <text x="620" y="80">NO</text> <text x="820" y="80" class="mono">0.00</text>
+                <line x1="-30" y1="95" x2="1010" y2="95" stroke="rgba(255,255,255,0.03)" />
+                
+                <text y="120">region</text> <text x="220" y="120" class="mono">VARCHAR(50)</text> <text x="420" y="120">NULL</text> <text x="620" y="120">YES</text> <text x="820" y="120" class="mono">NULL</text>
+                <line x1="-30" y1="135" x2="1010" y2="135" stroke="rgba(255,255,255,0.03)" />
+                
+                <text y="160">order_date</text> <text x="220" y="160" class="mono">DATE</text> <text x="420" y="160">NULL</text> <text x="620" y="160">NO</text> <text x="820" y="160" class="mono">CURRENT_DATE</text>
+            </g>
+        </g>
+        
+        <!-- Relationships map visualization inside center pane -->
+        <g transform="translate(40, 600)">
+            <text x="0" y="25" font-size="18" font-weight="bold">Schema Relationships Map (Inspected)</text>
+            <rect y="40" width="1040" height="320" rx="12" fill="rgba(15, 23, 42, 0.4)" stroke="rgba(255, 255, 255, 0.05)" />
+            
+            <!-- Visual Table cards -->
+            <!-- users table -->
+            <g transform="translate(80, 100)">
+                <rect width="220" height="150" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.1)" />
+                <rect width="220" height="36" fill="rgba(59,130,246,0.1)" rx="8" />
+                <text x="15" y="24" font-size="14" font-weight="bold">田 users</text>
+                <text x="15" y="65" font-size="12">🔑 id <tspan class="dim">INT</tspan></text>
+                <text x="15" y="95" font-size="12">👤 email <tspan class="dim">VARCHAR</tspan></text>
+            </g>
+            
+            <!-- orders table -->
+            <g transform="translate(460, 80)">
+                <rect width="220" height="190" rx="8" fill="rgba(255,255,255,0.02)" stroke="#38BDF8" stroke-width="1.5" />
+                <rect width="220" height="36" fill="rgba(56,189,248,0.15)" rx="8" />
+                <text x="15" y="24" font-size="14" font-weight="bold">田 orders</text>
+                <text x="15" y="65" font-size="12">🔑 id <tspan class="dim">INT</tspan></text>
+                <text x="15" y="95" font-size="12" class="cyan-text">🔗 user_id <tspan class="dim">INT (FK)</tspan></text>
+                <text x="15" y="125" font-size="12">💰 total_amount <tspan class="dim">NUMERIC</tspan></text>
+            </g>
+            
+            <!-- Connector Line -->
+            <path d="M 300 165 C 380 165, 380 175, 460 175" fill="none" stroke="#38BDF8" stroke-width="2" stroke-dasharray="4 4" filter="url(#glow-cyan)" />
+        </g>
+    </g>
+    
+    <!-- RIGHT PANEL: AI schema helper -->
+    <g transform="translate(1510, 70)">
+        <rect width="400" height="1000" rx="12" fill="rgba(15, 23, 42, 0.6)" stroke="rgba(255, 255, 255, 0.05)" stroke-width="1.5" />
+        <text x="25" y="40" font-size="18" font-weight="bold" fill="url(#purple-pink)">AI Schema Explanation</text>
+        <line x1="25" y1="60" x2="375" y2="60" stroke="rgba(255,255,255,0.05)" />
+        
+        <g transform="translate(20, 80)">
+            <rect width="360" height="420" rx="12" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)" />
+            <text x="20" y="40" font-size="16" font-weight="bold" fill="#38BDF8">Table: orders Summary</text>
+            
+            <g transform="translate(20, 80)" font-size="14">
+                <text y="0" font-weight="bold">Core Purpose:</text>
+                <text y="25" class="dim">Stores all transactional orders completed</text>
+                <text y="45" class="dim">by business users in the storefront.</text>
+                
+                <text y="100" font-weight="bold">Key Relations:</text>
+                <text y="125" class="dim">Linked directly to the <tspan fill="#38BDF8" font-weight="bold">users</tspan> table</text>
+                <text y="145" class="dim">via the foreign key <tspan fill="#C084FC" class="mono">user_id</tspan>.</text>
+                
+                <text y="200" font-weight="bold">Growth Vector:</text>
+                <text y="225" class="dim">High row count growth rate. Partitioning</text>
+                <text y="245" class="dim">is recommended for production on the</text>
+                <text y="265" class="dim"><tspan fill="#38BDF8" class="mono">order_date</tspan> column.</text>
+            </g>
+        </g>
+    </g>
+</svg>

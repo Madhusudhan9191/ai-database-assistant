@@ -1,0 +1,230 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+    <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="bg-grad" cx="50%" cy="50%" r="70%">
+        <stop offset="0%" stop-color="#0A1128" />
+        <stop offset="100%" stop-color="#05070F" />
+    </radialGradient>
+    
+    <!-- Neon Gradients -->
+    <linearGradient id="blue-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#3B82F6" />
+        <stop offset="100%" stop-color="#06B6D4" />
+    </linearGradient>
+    <linearGradient id="emerald-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#10B981" />
+        <stop offset="100%" stop-color="#34D399" />
+    </linearGradient>
+    <linearGradient id="purple-pink" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#8B5CF6" />
+        <stop offset="100%" stop-color="#EC4899" />
+    </linearGradient>
+    <linearGradient id="purple-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#7C3AED" />
+        <stop offset="100%" stop-color="#2563EB" />
+    </linearGradient>
+    <linearGradient id="yellow-orange" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#F59E0B" />
+        <stop offset="100%" stop-color="#EF4444" />
+    </linearGradient>
+    
+    <!-- Glassmorphic Gradients -->
+    <linearGradient id="glass" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#ffffff" stop-opacity="0.08" />
+        <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02" />
+    </linearGradient>
+    <linearGradient id="glass-border" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#ffffff" stop-opacity="0.15" />
+        <stop offset="100%" stop-color="#ffffff" stop-opacity="0.03" />
+    </linearGradient>
+    
+    <!-- Neon Glow Filters -->
+    <filter id="glow-cyan" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="6" result="blur" />
+        <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+        </feMerge>
+    </filter>
+    <filter id="glow-blue" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="8" result="blur" />
+        <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+        </feMerge>
+    </filter>
+    <filter id="glow-purple" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="8" result="blur" />
+        <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+        </feMerge>
+    </filter>
+    <filter id="glow-emerald" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="6" result="blur" />
+        <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+        </feMerge>
+    </filter>
+    <filter id="glow-red" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="6" result="blur" />
+        <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+        </feMerge>
+    </filter>
+    
+    <!-- Drop Shadow for Panels -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+        <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+</defs>
+
+    <style>
+    text {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        fill: #FFFFFF;
+    }
+    .title { font-weight: 800; }
+    .subtitle { fill: #94A3B8; font-weight: 500; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+    .dim { fill: #64748B; }
+    .cyan-text { fill: #22D3EE; }
+    .blue-text { fill: #38BDF8; }
+    .emerald-text { fill: #34D399; }
+    .purple-text { fill: #C084FC; }
+    .red-text { fill: #F87171; }
+    .yellow-text { fill: #FBBF24; }
+    .border-stroke { stroke: rgba(255, 255, 255, 0.08); stroke-width: 1px; }
+    .border-stroke-glow { stroke: #06B6D4; stroke-width: 1.5px; filter: url(#glow-cyan); }
+    .grid-line { stroke: rgba(255, 255, 255, 0.03); stroke-width: 1px; }
+</style>
+
+    <!-- Background -->
+    <rect width="1920" height="1080" fill="url(#bg-grad)" />
+    <line x1="0" y1="0" x2="0" y2="1080" class="grid-line" />
+<line x1="120" y1="0" x2="120" y2="1080" class="grid-line" />
+<line x1="240" y1="0" x2="240" y2="1080" class="grid-line" />
+<line x1="360" y1="0" x2="360" y2="1080" class="grid-line" />
+<line x1="480" y1="0" x2="480" y2="1080" class="grid-line" />
+<line x1="600" y1="0" x2="600" y2="1080" class="grid-line" />
+<line x1="720" y1="0" x2="720" y2="1080" class="grid-line" />
+<line x1="840" y1="0" x2="840" y2="1080" class="grid-line" />
+<line x1="960" y1="0" x2="960" y2="1080" class="grid-line" />
+<line x1="1080" y1="0" x2="1080" y2="1080" class="grid-line" />
+<line x1="1200" y1="0" x2="1200" y2="1080" class="grid-line" />
+<line x1="1320" y1="0" x2="1320" y2="1080" class="grid-line" />
+<line x1="1440" y1="0" x2="1440" y2="1080" class="grid-line" />
+<line x1="1560" y1="0" x2="1560" y2="1080" class="grid-line" />
+<line x1="1680" y1="0" x2="1680" y2="1080" class="grid-line" />
+<line x1="1800" y1="0" x2="1800" y2="1080" class="grid-line" />
+<line x1="0" y1="0" x2="1920" y2="0" class="grid-line" />
+<line x1="0" y1="120" x2="1920" y2="120" class="grid-line" />
+<line x1="0" y1="240" x2="1920" y2="240" class="grid-line" />
+<line x1="0" y1="360" x2="1920" y2="360" class="grid-line" />
+<line x1="0" y1="480" x2="1920" y2="480" class="grid-line" />
+<line x1="0" y1="600" x2="1920" y2="600" class="grid-line" />
+<line x1="0" y1="720" x2="1920" y2="720" class="grid-line" />
+<line x1="0" y1="840" x2="1920" y2="840" class="grid-line" />
+<line x1="0" y1="960" x2="1920" y2="960" class="grid-line" />
+
+    
+    <!-- McKinsey Style Header -->
+    <g transform="translate(100, 80)">
+        <text x="0" y="0" font-size="44" class="title" fill="#FFFFFF">AI-Generated Executive Business Report</text>
+        <text x="0" y="45" font-size="18" fill="url(#blue-cyan)">McKinsey / Deloitte Advisory Format</text>
+        <line x1="0" y1="75" x2="1720" y2="75" stroke="#FFFFFF" stroke-width="2" opacity="0.1" />
+    </g>
+    
+    <!-- Report Structure -->
+    <!-- Column 1: Executive Summary & Findings -->
+    <g transform="translate(100, 200)">
+        <rect width="520" height="740" rx="8" fill="rgba(255,255,255,0.01)" stroke="rgba(255,255,255,0.03)" />
+        <text x="30" y="45" font-size="22" font-weight="bold" fill="#38BDF8">Executive Summary</text>
+        <line x1="30" y1="65" x2="490" y2="65" stroke="rgba(255,255,255,0.05)" />
+        
+        <g transform="translate(30, 95)" font-size="14">
+            <text y="0" font-weight="bold" fill="#FFF">Fiscal Year 2025 Strategy:</text>
+            <text y="30" class="dim">Analysis of public.orders metadata reveals</text>
+            <text y="50" class="dim">robust transaction volume expansion.</text>
+            <text y="70" class="dim">Customer acquisitions grew 22.5% YoY.</text>
+            
+            <text y="140" font-weight="bold" fill="#FFF">Key Finding 1: Regional Spikes</text>
+            <text y="170" class="dim">North region remains the primary</text>
+            <text y="190" class="dim">growth engine, generating $1.2M YTD.</text>
+            
+            <text y="260" font-weight="bold" fill="#FFF">Key Finding 2: Tech Optimization</text>
+            <text y="290" class="dim">Database query performance optimized</text>
+            <text y="310" class="dim">via automatic SQL repair, decreasing</text>
+            <text y="330" class="dim">timeout exceptions by 88% overall.</text>
+        </g>
+    </g>
+    
+    <!-- Column 2: Risks & Opportunities -->
+    <g transform="translate(660, 200)">
+        <rect width="520" height="740" rx="8" fill="rgba(255,255,255,0.01)" stroke="rgba(255,255,255,0.03)" />
+        <text x="30" y="45" font-size="22" font-weight="bold" fill="#EF4444">Risks &amp; Opportunities</text>
+        <line x1="30" y1="65" x2="490" y2="65" stroke="rgba(255,255,255,0.05)" />
+        
+        <g transform="translate(30, 95)" font-size="14">
+            <text y="0" font-weight="bold" fill="#F87171">Identified Business Risks:</text>
+            <text y="30" class="dim">1. Storage limitations on PostgreSQL host.</text>
+            <text y="50" class="dim">   Thresholds exceeding 82% partition utilization.</text>
+            <text y="80" class="dim">2. Oracle legacy connection timeouts.</text>
+            <text y="100" class="dim">   High risk of pipeline sync stagnation.</text>
+            
+            <text y="170" font-weight="bold" fill="#34D399">Growth Opportunities:</text>
+            <text y="200" class="dim">1. Shift resources to South division.</text>
+            <text y="220" class="dim">   MoM expansion shows 8% growth velocity.</text>
+            <text y="250" class="dim">2. Automate schema indexing.</text>
+            <text y="270" class="dim">   Recommended indices on orders(order_date).</text>
+        </g>
+    </g>
+    
+    <!-- Column 3: Charts & Recommendations -->
+    <g transform="translate(1220, 200)">
+        <rect width="600" height="740" rx="8" fill="rgba(255,255,255,0.01)" stroke="rgba(255,255,255,0.03)" />
+        <text x="30" y="45" font-size="22" font-weight="bold" fill="#10B981">Data Visualization</text>
+        <line x1="30" y1="65" x2="570" y2="65" stroke="rgba(255,255,255,0.05)" />
+        
+        <!-- Small Line Chart -->
+        <g transform="translate(40, 100)">
+            <rect width="520" height="260" rx="6" fill="rgba(15, 23, 42, 0.4)" stroke="rgba(255,255,255,0.03)" />
+            <path d="M 60 200 L 160 170 L 260 80 L 360 120 L 460 50" fill="none" stroke="url(#emerald-cyan)" stroke-width="4" filter="url(#glow-emerald)" />
+            <text x="30" y="40" font-size="14" font-weight="bold">Revenue Trend Projection</text>
+        </g>
+        
+        <!-- Score dial card -->
+        <g transform="translate(40, 390)">
+            <rect width="520" height="150" rx="6" fill="rgba(139, 92, 246, 0.05)" stroke="rgba(139, 92, 246, 0.2)" />
+            <text x="30" y="45" font-size="16" class="dim">AI Insights Confidence Metric</text>
+            <text x="30" y="105" font-size="44" font-weight="bold" fill="#8B5CF6">98.2% <tspan font-size="18" fill="#FFF" font-weight="normal">Schema Matches</tspan></text>
+        </g>
+    </g>
+    
+    <!-- Bottom Toolbar with export triggers -->
+    <g transform="translate(100, 970)">
+        <rect width="1720" height="70" rx="10" fill="rgba(15, 23, 42, 0.8)" stroke="rgba(255,255,255,0.05)" />
+        <text x="30" y="42" font-size="16" class="dim">Report Generated: July 2026</text>
+        
+        <!-- Action Buttons -->
+        <!-- PDF Button -->
+        <g transform="translate(1050, 15)">
+            <rect width="180" height="40" rx="6" fill="#EF4444" />
+            <text x="90" y="25" font-size="14" font-weight="bold" text-anchor="middle">📥 Export PDF</text>
+        </g>
+        
+        <!-- Excel Button -->
+        <g transform="translate(1260, 15)">
+            <rect width="180" height="40" rx="6" fill="#10B981" />
+            <text x="90" y="25" font-size="14" font-weight="bold" text-anchor="middle">📊 Export Excel</text>
+        </g>
+        
+        <!-- Share Button -->
+        <g transform="translate(1470, 15)">
+            <rect width="200" height="40" rx="6" fill="#3B82F6" />
+            <text x="100" y="25" font-size="14" font-weight="bold" text-anchor="middle">🔗 Share Live Report</text>
+        </g>
+    </g>
+</svg>

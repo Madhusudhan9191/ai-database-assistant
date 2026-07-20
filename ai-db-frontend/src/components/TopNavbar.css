@@ -1,0 +1,42 @@
+/* ========================================
+   TopNavbar.css
+   ======================================== */
+
+.top-navbar {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding: 0 25px;
+  background: var(--bg-card);
+  color: var(--text-main);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.navbar-tabs {
+  display: flex;
+  margin-left: auto;
+  gap: 10px;
+}
+
+.nav-tab {
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--text-secondary);
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-tab:hover {
+  background: var(--hover-bg);
+  color: var(--text-main);
+}
+
+.nav-tab.active {
+  background: rgba(37, 99, 235, 0.15);
+  border: 1px solid rgba(37, 99, 235, 0.4);
+  color: #3b82f6;
+}

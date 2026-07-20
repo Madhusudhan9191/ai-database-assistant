@@ -1,0 +1,247 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+    <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="bg-grad" cx="50%" cy="50%" r="70%">
+        <stop offset="0%" stop-color="#0A1128" />
+        <stop offset="100%" stop-color="#05070F" />
+    </radialGradient>
+    
+    <!-- Neon Gradients -->
+    <linearGradient id="blue-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#3B82F6" />
+        <stop offset="100%" stop-color="#06B6D4" />
+    </linearGradient>
+    <linearGradient id="emerald-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#10B981" />
+        <stop offset="100%" stop-color="#34D399" />
+    </linearGradient>
+    <linearGradient id="purple-pink" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#8B5CF6" />
+        <stop offset="100%" stop-color="#EC4899" />
+    </linearGradient>
+    <linearGradient id="purple-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#7C3AED" />
+        <stop offset="100%" stop-color="#2563EB" />
+    </linearGradient>
+    <linearGradient id="yellow-orange" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#F59E0B" />
+        <stop offset="100%" stop-color="#EF4444" />
+    </linearGradient>
+    
+    <!-- Glassmorphic Gradients -->
+    <linearGradient id="glass" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#ffffff" stop-opacity="0.08" />
+        <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02" />
+    </linearGradient>
+    <linearGradient id="glass-border" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#ffffff" stop-opacity="0.15" />
+        <stop offset="100%" stop-color="#ffffff" stop-opacity="0.03" />
+    </linearGradient>
+    
+    <!-- Neon Glow Filters -->
+    <filter id="glow-cyan" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="6" result="blur" />
+        <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+        </feMerge>
+    </filter>
+    <filter id="glow-blue" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="8" result="blur" />
+        <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+        </feMerge>
+    </filter>
+    <filter id="glow-purple" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="8" result="blur" />
+        <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+        </feMerge>
+    </filter>
+    <filter id="glow-emerald" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="6" result="blur" />
+        <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+        </feMerge>
+    </filter>
+    <filter id="glow-red" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="6" result="blur" />
+        <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+        </feMerge>
+    </filter>
+    
+    <!-- Drop Shadow for Panels -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+        <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+</defs>
+
+    <style>
+    text {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        fill: #FFFFFF;
+    }
+    .title { font-weight: 800; }
+    .subtitle { fill: #94A3B8; font-weight: 500; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+    .dim { fill: #64748B; }
+    .cyan-text { fill: #22D3EE; }
+    .blue-text { fill: #38BDF8; }
+    .emerald-text { fill: #34D399; }
+    .purple-text { fill: #C084FC; }
+    .red-text { fill: #F87171; }
+    .yellow-text { fill: #FBBF24; }
+    .border-stroke { stroke: rgba(255, 255, 255, 0.08); stroke-width: 1px; }
+    .border-stroke-glow { stroke: #06B6D4; stroke-width: 1.5px; filter: url(#glow-cyan); }
+    .grid-line { stroke: rgba(255, 255, 255, 0.03); stroke-width: 1px; }
+</style>
+
+    <!-- Background -->
+    <rect width="1920" height="1080" fill="url(#bg-grad)" />
+    <line x1="0" y1="0" x2="0" y2="1080" class="grid-line" />
+<line x1="100" y1="0" x2="100" y2="1080" class="grid-line" />
+<line x1="200" y1="0" x2="200" y2="1080" class="grid-line" />
+<line x1="300" y1="0" x2="300" y2="1080" class="grid-line" />
+<line x1="400" y1="0" x2="400" y2="1080" class="grid-line" />
+<line x1="500" y1="0" x2="500" y2="1080" class="grid-line" />
+<line x1="600" y1="0" x2="600" y2="1080" class="grid-line" />
+<line x1="700" y1="0" x2="700" y2="1080" class="grid-line" />
+<line x1="800" y1="0" x2="800" y2="1080" class="grid-line" />
+<line x1="900" y1="0" x2="900" y2="1080" class="grid-line" />
+<line x1="1000" y1="0" x2="1000" y2="1080" class="grid-line" />
+<line x1="1100" y1="0" x2="1100" y2="1080" class="grid-line" />
+<line x1="1200" y1="0" x2="1200" y2="1080" class="grid-line" />
+<line x1="1300" y1="0" x2="1300" y2="1080" class="grid-line" />
+<line x1="1400" y1="0" x2="1400" y2="1080" class="grid-line" />
+<line x1="1500" y1="0" x2="1500" y2="1080" class="grid-line" />
+<line x1="1600" y1="0" x2="1600" y2="1080" class="grid-line" />
+<line x1="1700" y1="0" x2="1700" y2="1080" class="grid-line" />
+<line x1="1800" y1="0" x2="1800" y2="1080" class="grid-line" />
+<line x1="1900" y1="0" x2="1900" y2="1080" class="grid-line" />
+<line x1="0" y1="0" x2="1920" y2="0" class="grid-line" />
+<line x1="0" y1="100" x2="1920" y2="100" class="grid-line" />
+<line x1="0" y1="200" x2="1920" y2="200" class="grid-line" />
+<line x1="0" y1="300" x2="1920" y2="300" class="grid-line" />
+<line x1="0" y1="400" x2="1920" y2="400" class="grid-line" />
+<line x1="0" y1="500" x2="1920" y2="500" class="grid-line" />
+<line x1="0" y1="600" x2="1920" y2="600" class="grid-line" />
+<line x1="0" y1="700" x2="1920" y2="700" class="grid-line" />
+<line x1="0" y1="800" x2="1920" y2="800" class="grid-line" />
+<line x1="0" y1="900" x2="1920" y2="900" class="grid-line" />
+<line x1="0" y1="1000" x2="1920" y2="1000" class="grid-line" />
+
+    
+    <!-- Top Header -->
+    <g>
+        <rect width="1920" height="60" fill="rgba(15, 23, 42, 0.8)" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
+        <text x="30" y="38" font-size="22" font-weight="bold">🛡️ SQL Platform Cybersecurity Dashboard</text>
+        <text x="1650" y="36" font-size="16" fill="#F87171" font-weight="bold">🔒 SECURITY STATE: OPTIMAL</text>
+    </g>
+    
+    <!-- Left: Security Pipeline Flow -->
+    <g transform="translate(40, 90)">
+        <rect width="640" height="940" rx="12" fill="rgba(15, 23, 42, 0.6)" stroke="rgba(255,255,255,0.05)" stroke-width="1.5" />
+        <text x="30" y="45" font-size="18" font-weight="bold" fill="#38BDF8">Live Validation Flow</text>
+        
+        <!-- Pipeline Flow elements -->
+        <g transform="translate(60, 80)">
+            <!-- User Query -->
+            <rect width="480" height="60" rx="10" fill="rgba(255,255,255,0.01)" stroke="rgba(255,255,255,0.05)" />
+            <text x="30" y="35" font-size="14" font-weight="bold">User Query Input</text>
+            <text x="450" y="35" font-size="12" fill="#10B981" text-anchor="end">✓ Safe</text>
+            
+            <!-- SQL Generation -->
+            <rect y="100" width="480" height="60" rx="10" fill="rgba(255,255,255,0.01)" stroke="rgba(255,255,255,0.05)" />
+            <text x="30" y="135" font-size="14" font-weight="bold">SQL Generation (Groq LLM)</text>
+            <text x="450" y="135" font-size="12" fill="#10B981" text-anchor="end">✓ Done</text>
+            
+            <!-- Read-Only Validator -->
+            <rect y="200" width="480" height="60" rx="10" fill="rgba(239, 68, 68, 0.08)" stroke="#EF4444" stroke-width="1.5" filter="url(#glow-red)" />
+            <text x="30" y="235" font-size="14" font-weight="bold" fill="#F87171">Read-Only SQL Validator</text>
+            <text x="450" y="235" font-size="12" fill="#F87171" text-anchor="end">⚠️ Enforced</text>
+            
+            <!-- JWT Auth -->
+            <rect y="300" width="480" height="60" rx="10" fill="rgba(255,255,255,0.01)" stroke="rgba(255,255,255,0.05)" />
+            <text x="30" y="335" font-size="14" font-weight="bold">JWT Authentication Check</text>
+            <text x="450" y="335" font-size="12" fill="#10B981" text-anchor="end">✓ Authorized</text>
+            
+            <!-- Rate Limiter -->
+            <rect y="400" width="480" height="60" rx="10" fill="rgba(255,255,255,0.01)" stroke="rgba(255,255,255,0.05)" />
+            <text x="30" y="435" font-size="14" font-weight="bold">API Rate Limiter</text>
+            <text x="450" y="435" font-size="12" fill="#10B981" text-anchor="end">✓ Passed</text>
+            
+            <!-- Security Audit -->
+            <rect y="500" width="480" height="60" rx="10" fill="rgba(56, 189, 248, 0.08)" stroke="#38BDF8" stroke-width="1.5" />
+            <text x="30" y="535" font-size="14" font-weight="bold">Security Audit Logging</text>
+            <text x="450" y="535" font-size="12" fill="#38BDF8" text-anchor="end">✍ Write OK</text>
+        </g>
+    </g>
+    
+    <!-- Right Top: Alert boxes (Blocked queries count) -->
+    <g transform="translate(710, 90)">
+        <rect width="1170" height="280" rx="12" fill="rgba(15, 23, 42, 0.4)" stroke="rgba(255, 255, 255, 0.05)" stroke-width="1.5" />
+        <text x="30" y="45" font-size="18" font-weight="bold" fill="#F87171">Audit Lockout &amp; Threat Detection</text>
+        
+        <g transform="translate(30, 80)">
+            <!-- DELETE card -->
+            <rect width="250" height="150" rx="10" fill="rgba(239, 68, 68, 0.05)" stroke="#EF4444" />
+            <text x="20" y="40" font-size="14" class="dim">Blocked DELETE Queries</text>
+            <text x="20" y="105" font-size="44" font-weight="bold" fill="#EF4444">4</text>
+            
+            <!-- DROP card -->
+            <rect x="290" width="250" height="150" rx="10" fill="rgba(239, 68, 68, 0.05)" stroke="#EF4444" />
+            <text x="310" y="40" font-size="14" class="dim">Blocked DROP Queries</text>
+            <text x="310" y="105" font-size="44" font-weight="bold" fill="#EF4444">12</text>
+            
+            <!-- ALTER card -->
+            <rect x="580" width="250" height="150" rx="10" fill="rgba(239, 68, 68, 0.05)" stroke="#EF4444" />
+            <text x="600" y="40" font-size="14" class="dim">Blocked ALTER Queries</text>
+            <text x="600" y="105" font-size="44" font-weight="bold" fill="#EF4444">1</text>
+            
+            <!-- Brute Force Lockouts -->
+            <rect x="870" width="240" height="150" rx="10" fill="rgba(245, 158, 11, 0.05)" stroke="#F59E0B" />
+            <text x="890" y="40" font-size="14" class="dim">Active Account Lockouts</text>
+            <text x="890" y="105" font-size="44" font-weight="bold" fill="#F59E0B">2</text>
+        </g>
+    </g>
+    
+    <!-- Right Bottom: Security Audit Logs -->
+    <g transform="translate(710, 400)">
+        <rect width="1170" height="630" rx="12" fill="rgba(15, 23, 42, 0.4)" stroke="rgba(255,255,255,0.05)" stroke-width="1.5" />
+        <text x="30" y="45" font-size="18" font-weight="bold">Security Audit Logs (SQLite Metadata DB)</text>
+        
+        <!-- Logs table -->
+        <g transform="translate(30, 80)">
+            <rect width="1110" height="500" rx="8" fill="rgba(15, 23, 42, 0.4)" stroke="rgba(255,255,255,0.03)" />
+            <rect width="1110" height="40" fill="rgba(255,255,255,0.02)" rx="8" />
+            
+            <text x="20" y="25" font-size="13" font-weight="bold" fill="#94A3B8">Timestamp</text>
+            <text x="200" y="25" font-size="13" font-weight="bold" fill="#94A3B8">User Account</text>
+            <text x="400" y="25" font-size="13" font-weight="bold" fill="#94A3B8">Action Performed</text>
+            <text x="800" y="25" font-size="13" font-weight="bold" fill="#94A3B8">Result/Status</text>
+            <line x1="0" y1="40" x2="1110" y2="40" stroke="rgba(255,255,255,0.05)" />
+            
+            <g transform="translate(20, 75)" font-size="13">
+                <!-- Row 1 -->
+                <text y="0">2026-07-20 18:43:02</text> <text x="180" y="0">analyst_01</text> <text x="380" y="0" class="mono">SELECT * FROM orders</text> <text x="780" y="0" fill="#10B981">SUCCESS (200 OK)</text>
+                <line x1="-20" y1="15" x2="1090" y2="15" stroke="rgba(255,255,255,0.03)" />
+                
+                <!-- Row 2 -->
+                <text y="35">2026-07-20 18:43:10</text> <text x="180" y="35">analyst_01</text> <text x="380" y="35" class="mono red-text">DROP TABLE users</text> <text x="780" y="35" fill="#EF4444" font-weight="bold">BLOCKED: WRITE_RESTRICTION</text>
+                <line x1="-20" y1="50" x2="1090" y2="50" stroke="rgba(255,255,255,0.03)" />
+                
+                <!-- Row 3 -->
+                <text y="70">2026-07-20 18:43:15</text> <text x="180" y="70">intruder_guest</text> <text x="380" y="70" class="mono">POST /api/auth/login</text> <text x="780" y="70" fill="#F59E0B">FAILED_ATTEMPT (Invalid JWT)</text>
+                <line x1="-20" y1="85" x2="1090" y2="85" stroke="rgba(255,255,255,0.03)" />
+                
+                <!-- Row 4 -->
+                <text y="105">2026-07-20 18:43:22</text> <text x="180" y="105">analyst_01</text> <text x="380" y="105" class="mono">POST /api/auth/refresh</text> <text x="780" y="105" fill="#10B981">TOKEN_REFRESH (New JWT Issued)</text>
+            </g>
+        </g>
+    </g>
+</svg>

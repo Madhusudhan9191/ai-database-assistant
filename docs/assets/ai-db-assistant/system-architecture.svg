@@ -1,0 +1,280 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3840 2160" width="100%" height="100%">
+    <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="bg-grad" cx="50%" cy="50%" r="70%">
+        <stop offset="0%" stop-color="#0A1128" />
+        <stop offset="100%" stop-color="#05070F" />
+    </radialGradient>
+    
+    <!-- Neon Gradients -->
+    <linearGradient id="blue-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#3B82F6" />
+        <stop offset="100%" stop-color="#06B6D4" />
+    </linearGradient>
+    <linearGradient id="emerald-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#10B981" />
+        <stop offset="100%" stop-color="#34D399" />
+    </linearGradient>
+    <linearGradient id="purple-pink" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#8B5CF6" />
+        <stop offset="100%" stop-color="#EC4899" />
+    </linearGradient>
+    <linearGradient id="purple-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#7C3AED" />
+        <stop offset="100%" stop-color="#2563EB" />
+    </linearGradient>
+    <linearGradient id="yellow-orange" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#F59E0B" />
+        <stop offset="100%" stop-color="#EF4444" />
+    </linearGradient>
+    
+    <!-- Glassmorphic Gradients -->
+    <linearGradient id="glass" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#ffffff" stop-opacity="0.08" />
+        <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02" />
+    </linearGradient>
+    <linearGradient id="glass-border" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#ffffff" stop-opacity="0.15" />
+        <stop offset="100%" stop-color="#ffffff" stop-opacity="0.03" />
+    </linearGradient>
+    
+    <!-- Neon Glow Filters -->
+    <filter id="glow-cyan" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="6" result="blur" />
+        <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+        </feMerge>
+    </filter>
+    <filter id="glow-blue" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="8" result="blur" />
+        <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+        </feMerge>
+    </filter>
+    <filter id="glow-purple" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="8" result="blur" />
+        <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+        </feMerge>
+    </filter>
+    <filter id="glow-emerald" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="6" result="blur" />
+        <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+        </feMerge>
+    </filter>
+    <filter id="glow-red" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="6" result="blur" />
+        <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+        </feMerge>
+    </filter>
+    
+    <!-- Drop Shadow for Panels -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+        <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+</defs>
+
+    <style>
+    text {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        fill: #FFFFFF;
+    }
+    .title { font-weight: 800; }
+    .subtitle { fill: #94A3B8; font-weight: 500; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+    .dim { fill: #64748B; }
+    .cyan-text { fill: #22D3EE; }
+    .blue-text { fill: #38BDF8; }
+    .emerald-text { fill: #34D399; }
+    .purple-text { fill: #C084FC; }
+    .red-text { fill: #F87171; }
+    .yellow-text { fill: #FBBF24; }
+    .border-stroke { stroke: rgba(255, 255, 255, 0.08); stroke-width: 1px; }
+    .border-stroke-glow { stroke: #06B6D4; stroke-width: 1.5px; filter: url(#glow-cyan); }
+    .grid-line { stroke: rgba(255, 255, 255, 0.03); stroke-width: 1px; }
+</style>
+
+    <!-- Background -->
+    <rect width="3840" height="2160" fill="url(#bg-grad)" />
+    <line x1="0" y1="0" x2="0" y2="2160" class="grid-line" />
+<line x1="160" y1="0" x2="160" y2="2160" class="grid-line" />
+<line x1="320" y1="0" x2="320" y2="2160" class="grid-line" />
+<line x1="480" y1="0" x2="480" y2="2160" class="grid-line" />
+<line x1="640" y1="0" x2="640" y2="2160" class="grid-line" />
+<line x1="800" y1="0" x2="800" y2="2160" class="grid-line" />
+<line x1="960" y1="0" x2="960" y2="2160" class="grid-line" />
+<line x1="1120" y1="0" x2="1120" y2="2160" class="grid-line" />
+<line x1="1280" y1="0" x2="1280" y2="2160" class="grid-line" />
+<line x1="1440" y1="0" x2="1440" y2="2160" class="grid-line" />
+<line x1="1600" y1="0" x2="1600" y2="2160" class="grid-line" />
+<line x1="1760" y1="0" x2="1760" y2="2160" class="grid-line" />
+<line x1="1920" y1="0" x2="1920" y2="2160" class="grid-line" />
+<line x1="2080" y1="0" x2="2080" y2="2160" class="grid-line" />
+<line x1="2240" y1="0" x2="2240" y2="2160" class="grid-line" />
+<line x1="2400" y1="0" x2="2400" y2="2160" class="grid-line" />
+<line x1="2560" y1="0" x2="2560" y2="2160" class="grid-line" />
+<line x1="2720" y1="0" x2="2720" y2="2160" class="grid-line" />
+<line x1="2880" y1="0" x2="2880" y2="2160" class="grid-line" />
+<line x1="3040" y1="0" x2="3040" y2="2160" class="grid-line" />
+<line x1="3200" y1="0" x2="3200" y2="2160" class="grid-line" />
+<line x1="3360" y1="0" x2="3360" y2="2160" class="grid-line" />
+<line x1="3520" y1="0" x2="3520" y2="2160" class="grid-line" />
+<line x1="3680" y1="0" x2="3680" y2="2160" class="grid-line" />
+<line x1="0" y1="0" x2="3840" y2="0" class="grid-line" />
+<line x1="0" y1="160" x2="3840" y2="160" class="grid-line" />
+<line x1="0" y1="320" x2="3840" y2="320" class="grid-line" />
+<line x1="0" y1="480" x2="3840" y2="480" class="grid-line" />
+<line x1="0" y1="640" x2="3840" y2="640" class="grid-line" />
+<line x1="0" y1="800" x2="3840" y2="800" class="grid-line" />
+<line x1="0" y1="960" x2="3840" y2="960" class="grid-line" />
+<line x1="0" y1="1120" x2="3840" y2="1120" class="grid-line" />
+<line x1="0" y1="1280" x2="3840" y2="1280" class="grid-line" />
+<line x1="0" y1="1440" x2="3840" y2="1440" class="grid-line" />
+<line x1="0" y1="1600" x2="3840" y2="1600" class="grid-line" />
+<line x1="0" y1="1760" x2="3840" y2="1760" class="grid-line" />
+<line x1="0" y1="1920" x2="3840" y2="1920" class="grid-line" />
+<line x1="0" y1="2080" x2="3840" y2="2080" class="grid-line" />
+
+    
+    <!-- Title -->
+    <g transform="translate(150, 150)">
+        <text x="0" y="0" font-size="64" class="title" fill="url(#blue-cyan)">Production System Architecture</text>
+        <text x="0" y="50" font-size="24" class="subtitle">OpenAI Engineering Documentation Style - Comprehensive Pipeline</text>
+    </g>
+    
+    <!-- CONTAINER boundaries (Logical Layers) -->
+    <!-- Client Layer -->
+    <g transform="translate(150, 300)">
+        <rect width="600" height="1560" rx="20" fill="rgba(255,255,255,0.01)" stroke="rgba(255,255,255,0.05)" stroke-width="2" />
+        <text x="30" y="50" font-size="24" class="dim" font-weight="bold">Client Layer</text>
+        
+        <!-- React Frontend Container -->
+        <g transform="translate(40, 90)">
+            <rect width="520" height="420" rx="16" fill="rgba(15, 23, 42, 0.6)" stroke="#38BDF8" stroke-width="2" />
+            <text x="30" y="50" font-size="22" font-weight="bold">React 19 Frontend Container</text>
+            <text x="30" y="90" font-size="16" class="dim">Technology: <tspan fill="#FFF">Vite + Recharts + Axios</tspan></text>
+            <text x="30" y="130" font-size="15" fill="#38BDF8">Responsibilities:</text>
+            <text x="50" y="165" font-size="15" class="dim">- Natural Language query input form</text>
+            <text x="50" y="195" font-size="15" class="dim">- Interactive results grid rendering</text>
+            <text x="50" y="225" font-size="15" class="dim">- Recharts dynamic visualization</text>
+            <text x="50" y="255" font-size="15" class="dim">- JWT Authentication session handling</text>
+        </g>
+    </g>
+    
+    <!-- API Gateways & Middleware -->
+    <g transform="translate(850, 300)">
+        <rect width="700" height="1560" rx="20" fill="rgba(255,255,255,0.01)" stroke="rgba(255,255,255,0.05)" stroke-width="2" />
+        <text x="30" y="50" font-size="24" class="dim" font-weight="bold">Gateway &amp; Security Layer</text>
+        
+        <!-- FastAPI Container -->
+        <g transform="translate(50, 90)">
+            <rect width="600" height="740" rx="16" fill="rgba(15, 23, 42, 0.6)" stroke="#C084FC" stroke-width="2" />
+            <text x="30" y="50" font-size="22" font-weight="bold">FastAPI Backend API Router</text>
+            <text x="30" y="90" font-size="16" class="dim">Technology: <tspan fill="#FFF">Uvicorn + Python asyncio</tspan></text>
+            
+            <g transform="translate(30, 150)" font-size="15">
+                <!-- JWT Auth Card -->
+                <rect width="540" height="110" rx="8" fill="rgba(139, 92, 246, 0.08)" stroke="#8B5CF6" />
+                <text x="20" y="35" font-weight="bold">JWT Authentication Middleware</text>
+                <text x="20" y="65" class="dim">Parses OAuth2 tokens, decodes payload, validates sessions.</text>
+                <text x="20" y="85" fill="#8B5CF6" font-weight="bold">Status: Enabled</text>
+                
+                <!-- Rate Limiter Card -->
+                <rect y="130" width="540" height="110" rx="8" fill="rgba(239, 68, 68, 0.08)" stroke="#EF4444" />
+                <text x="20" y="165" font-weight="bold">Rate Limiting Service</text>
+                <text x="20" y="195" class="dim">Limits login requests (10/min) and query asks (30/min).</text>
+                <text x="20" y="215" fill="#EF4444" font-weight="bold">Status: Active</text>
+                
+                <!-- Security Auditor Card -->
+                <rect y="260" width="540" height="110" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)" />
+                <text x="20" y="295" font-weight="bold">SQLite Security Audit Logger</text>
+                <text x="20" y="325" class="dim">Stores all login attempts, block alerts, and database logs.</text>
+                <text x="20" y="345" class="dim">Database: metadata.db</text>
+            </g>
+        </g>
+    </g>
+    
+    <!-- AI Core & Reasoning Layer -->
+    <g transform="translate(1650, 300)">
+        <rect width="1100" height="1560" rx="20" fill="rgba(255,255,255,0.01)" stroke="rgba(255,255,255,0.05)" stroke-width="2" />
+        <text x="30" y="50" font-size="24" class="dim" font-weight="bold">AI Reasoning Core</text>
+        
+        <!-- Groq LLM and Helpers -->
+        <g transform="translate(50, 90)">
+            <rect width="1000" height="1360" rx="16" fill="rgba(15, 23, 42, 0.6)" stroke="#10B981" stroke-width="2" />
+            <text x="40" y="50" font-size="22" font-weight="bold">Groq LLM SQL Generator Engine</text>
+            <text x="40" y="90" font-size="16" class="dim">Technology: <tspan fill="#FFF">Llama-3-Groq + Schema Context Injection</tspan></text>
+            
+            <g transform="translate(40, 150)" font-size="15">
+                <!-- Schema understanding -->
+                <rect width="920" height="140" rx="10" fill="rgba(16, 185, 129, 0.05)" stroke="#10B981" />
+                <text x="30" y="45" font-size="18" font-weight="bold" fill="#34D399">1. Schema Understanding Engine</text>
+                <text x="30" y="80" class="dim">Inspects database structure, columns, primary/foreign keys, and data types.</text>
+                <text x="30" y="105" class="dim">Synchronizes immediately when database target changes.</text>
+                
+                <!-- SQL generator -->
+                <rect y="180" width="920" height="140" rx="10" fill="rgba(16, 185, 129, 0.05)" stroke="#10B981" />
+                <text x="30" y="225" font-size="18" font-weight="bold" fill="#34D399">2. Prompt Builder &amp; Groq Context Router</text>
+                <text x="30" y="260" class="dim">Assembles raw user question + schema maps into LLM prompts.</text>
+                <text x="30" y="285" class="dim">Transmits query payload securely to Groq Cloud endpoint.</text>
+                
+                <!-- SQL validator -->
+                <rect y="360" width="920" height="140" rx="10" fill="rgba(239, 68, 68, 0.05)" stroke="#EF4444" />
+                <text x="30" y="405" font-size="18" font-weight="bold" fill="#F87171">3. SQL Validator &amp; Filter</text>
+                <text x="30" y="440" class="dim">Strict parser blocks commands containing DELETE, DROP, ALTER, TRUNCATE, UPDATE.</text>
+                <text x="30" y="465" class="dim">Guarantees 100% read-only safety for target database engine.</text>
+                
+                <!-- Self healing -->
+                <rect y="540" width="920" height="140" rx="10" fill="rgba(56, 189, 248, 0.05)" stroke="#38BDF8" />
+                <text x="30" y="585" font-size="18" font-weight="bold" fill="#38BDF8">4. Self-Healing SQL Repair Agent</text>
+                <text x="30" y="620" class="dim">Captures native driver exceptions (e.g. UndefinedTable) and automatically</text>
+                <text x="30" y="645" class="dim">re-queries Groq with error feedback logs to auto-correct syntax errors.</text>
+            </g>
+        </g>
+    </g>
+    
+    <!-- Target Databases Layer -->
+    <g transform="translate(2850, 300)">
+        <rect width="840" height="1560" rx="20" fill="rgba(255,255,255,0.01)" stroke="rgba(255,255,255,0.05)" stroke-width="2" />
+        <text x="30" y="50" font-size="24" class="dim" font-weight="bold">Database Execution Layer</text>
+        
+        <!-- PostgreSQL container -->
+        <g transform="translate(40, 90)">
+            <rect width="760" height="240" rx="16" fill="rgba(15, 23, 42, 0.6)" stroke="#3B82F6" stroke-width="2" />
+            <text x="30" y="50" font-size="22" font-weight="bold">PostgreSQL Database Server</text>
+            <text x="30" y="90" font-size="15" class="dim">Driver: <tspan class="mono" fill="#FFF">psycopg2-binary</tspan></text>
+            <text x="30" y="130" font-size="15" class="dim">Role: Production Sales Transaction Storage</text>
+            <text x="30" y="170" font-size="15" fill="#10B981" font-weight="bold">● Connected (Latency: 12ms)</text>
+        </g>
+        
+        <!-- MySQL container -->
+        <g transform="translate(40, 370)">
+            <rect width="760" height="240" rx="16" fill="rgba(15, 23, 42, 0.6)" stroke="#38BDF8" stroke-width="1.5" />
+            <text x="30" y="50" font-size="22" font-weight="bold">MySQL Replication Server</text>
+            <text x="30" y="90" font-size="15" class="dim">Driver: <tspan class="mono" fill="#FFF">pymysql</tspan></text>
+            <text x="30" y="130" font-size="15" class="dim">Role: Analytics Data Warehouse Mirror</text>
+            <text x="30" y="170" font-size="15" fill="#10B981" font-weight="bold">● Connected (Latency: 42ms)</text>
+        </g>
+        
+        <!-- Oracle container -->
+        <g transform="translate(40, 650)">
+            <rect width="760" height="240" rx="16" fill="rgba(15, 23, 42, 0.6)" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
+            <text x="30" y="50" font-size="22" font-weight="bold">Oracle Enterprise Database</text>
+            <text x="30" y="90" font-size="15" class="dim">Driver: <tspan class="mono" fill="#FFF">oracledb</tspan></text>
+            <text x="30" y="130" font-size="15" class="dim">Role: Legacy Corporate Enterprise Ledger</text>
+            <text x="30" y="170" font-size="15" fill="#EF4444" font-weight="bold">● Offline (Latency: ERR)</text>
+        </g>
+    </g>
+    
+    <!-- API Connectors / Arrows -->
+    <path d="M 610 510 L 900 510" stroke="#06B6D4" stroke-width="4" fill="none" stroke-dasharray="4 4" filter="url(#glow-cyan)" />
+    <path d="M 1400 510 L 1690 510" stroke="#06B6D4" stroke-width="4" fill="none" stroke-dasharray="4 4" filter="url(#glow-cyan)" />
+    <path d="M 2690 510 L 2890 510" stroke="#06B6D4" stroke-width="4" fill="none" stroke-dasharray="4 4" filter="url(#glow-cyan)" />
+</svg>

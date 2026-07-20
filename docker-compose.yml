@@ -1,18 +1,33 @@
 services:
 
   backend:
-    build: .
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
     container_name: ai-db-backend
     ports:
       - "8000:8000"
     env_file:
       - .env
+    volumes:
+      - ./logs:/app/logs
+      - ./assistant_metadata.db:/app/assistant_metadata.db
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 5s
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
 
   frontend:
     build:
       context: ./ai-db-frontend
+      dockerfile: ../frontend/Dockerfile
     container_name: ai-db-frontend
     ports:
-      - "5173:5173"
+      - "5173:80"
     depends_on:
-      - backend
+      backend:
+        condition: service_healthy

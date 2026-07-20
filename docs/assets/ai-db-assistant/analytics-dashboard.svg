@@ -1,0 +1,248 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+    <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="bg-grad" cx="50%" cy="50%" r="70%">
+        <stop offset="0%" stop-color="#0A1128" />
+        <stop offset="100%" stop-color="#05070F" />
+    </radialGradient>
+    
+    <!-- Neon Gradients -->
+    <linearGradient id="blue-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#3B82F6" />
+        <stop offset="100%" stop-color="#06B6D4" />
+    </linearGradient>
+    <linearGradient id="emerald-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#10B981" />
+        <stop offset="100%" stop-color="#34D399" />
+    </linearGradient>
+    <linearGradient id="purple-pink" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#8B5CF6" />
+        <stop offset="100%" stop-color="#EC4899" />
+    </linearGradient>
+    <linearGradient id="purple-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#7C3AED" />
+        <stop offset="100%" stop-color="#2563EB" />
+    </linearGradient>
+    <linearGradient id="yellow-orange" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#F59E0B" />
+        <stop offset="100%" stop-color="#EF4444" />
+    </linearGradient>
+    
+    <!-- Glassmorphic Gradients -->
+    <linearGradient id="glass" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#ffffff" stop-opacity="0.08" />
+        <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02" />
+    </linearGradient>
+    <linearGradient id="glass-border" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#ffffff" stop-opacity="0.15" />
+        <stop offset="100%" stop-color="#ffffff" stop-opacity="0.03" />
+    </linearGradient>
+    
+    <!-- Neon Glow Filters -->
+    <filter id="glow-cyan" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="6" result="blur" />
+        <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+        </feMerge>
+    </filter>
+    <filter id="glow-blue" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="8" result="blur" />
+        <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+        </feMerge>
+    </filter>
+    <filter id="glow-purple" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="8" result="blur" />
+        <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+        </feMerge>
+    </filter>
+    <filter id="glow-emerald" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="6" result="blur" />
+        <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+        </feMerge>
+    </filter>
+    <filter id="glow-red" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="6" result="blur" />
+        <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+        </feMerge>
+    </filter>
+    
+    <!-- Drop Shadow for Panels -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+        <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+</defs>
+
+    <style>
+    text {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        fill: #FFFFFF;
+    }
+    .title { font-weight: 800; }
+    .subtitle { fill: #94A3B8; font-weight: 500; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+    .dim { fill: #64748B; }
+    .cyan-text { fill: #22D3EE; }
+    .blue-text { fill: #38BDF8; }
+    .emerald-text { fill: #34D399; }
+    .purple-text { fill: #C084FC; }
+    .red-text { fill: #F87171; }
+    .yellow-text { fill: #FBBF24; }
+    .border-stroke { stroke: rgba(255, 255, 255, 0.08); stroke-width: 1px; }
+    .border-stroke-glow { stroke: #06B6D4; stroke-width: 1.5px; filter: url(#glow-cyan); }
+    .grid-line { stroke: rgba(255, 255, 255, 0.03); stroke-width: 1px; }
+</style>
+
+    <!-- Background -->
+    <rect width="1920" height="1080" fill="url(#bg-grad)" />
+    <line x1="0" y1="0" x2="0" y2="1080" class="grid-line" />
+<line x1="100" y1="0" x2="100" y2="1080" class="grid-line" />
+<line x1="200" y1="0" x2="200" y2="1080" class="grid-line" />
+<line x1="300" y1="0" x2="300" y2="1080" class="grid-line" />
+<line x1="400" y1="0" x2="400" y2="1080" class="grid-line" />
+<line x1="500" y1="0" x2="500" y2="1080" class="grid-line" />
+<line x1="600" y1="0" x2="600" y2="1080" class="grid-line" />
+<line x1="700" y1="0" x2="700" y2="1080" class="grid-line" />
+<line x1="800" y1="0" x2="800" y2="1080" class="grid-line" />
+<line x1="900" y1="0" x2="900" y2="1080" class="grid-line" />
+<line x1="1000" y1="0" x2="1000" y2="1080" class="grid-line" />
+<line x1="1100" y1="0" x2="1100" y2="1080" class="grid-line" />
+<line x1="1200" y1="0" x2="1200" y2="1080" class="grid-line" />
+<line x1="1300" y1="0" x2="1300" y2="1080" class="grid-line" />
+<line x1="1400" y1="0" x2="1400" y2="1080" class="grid-line" />
+<line x1="1500" y1="0" x2="1500" y2="1080" class="grid-line" />
+<line x1="1600" y1="0" x2="1600" y2="1080" class="grid-line" />
+<line x1="1700" y1="0" x2="1700" y2="1080" class="grid-line" />
+<line x1="1800" y1="0" x2="1800" y2="1080" class="grid-line" />
+<line x1="1900" y1="0" x2="1900" y2="1080" class="grid-line" />
+<line x1="0" y1="0" x2="1920" y2="0" class="grid-line" />
+<line x1="0" y1="100" x2="1920" y2="100" class="grid-line" />
+<line x1="0" y1="200" x2="1920" y2="200" class="grid-line" />
+<line x1="0" y1="300" x2="1920" y2="300" class="grid-line" />
+<line x1="0" y1="400" x2="1920" y2="400" class="grid-line" />
+<line x1="0" y1="500" x2="1920" y2="500" class="grid-line" />
+<line x1="0" y1="600" x2="1920" y2="600" class="grid-line" />
+<line x1="0" y1="700" x2="1920" y2="700" class="grid-line" />
+<line x1="0" y1="800" x2="1920" y2="800" class="grid-line" />
+<line x1="0" y1="900" x2="1920" y2="900" class="grid-line" />
+<line x1="0" y1="1000" x2="1920" y2="1000" class="grid-line" />
+
+    
+    <!-- Top Header -->
+    <g>
+        <rect width="1920" height="60" fill="rgba(15, 23, 42, 0.8)" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
+        <text x="30" y="38" font-size="22" font-weight="bold">📊 Executive AI Analytics Dashboard</text>
+        <rect x="1650" y="12" width="240" height="36" rx="8" fill="rgba(56,189,248,0.15)" stroke="rgba(56,189,248,0.3)" stroke-width="1.5" />
+        <text x="1665" y="35" font-size="14" class="cyan-text" font-weight="bold">📅 Period: Fiscal Year 2025</text>
+    </g>
+    
+    <!-- KPI Row -->
+    <g transform="translate(40, 90)">
+        <!-- KPI 1 -->
+        <rect width="420" height="140" rx="12" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)" stroke-width="1.5" />
+        <text x="25" y="40" font-size="16" class="dim">Total Revenue</text>
+        <text x="25" y="95" font-size="36" font-weight="bold">$1,245,890 <tspan font-size="16" fill="#10B981">▲ +12.4%</tspan></text>
+        
+        <!-- KPI 2 -->
+        <rect x="460" width="420" height="140" rx="12" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)" stroke-width="1.5" />
+        <text x="485" y="40" font-size="16" class="dim">Sales Orders</text>
+        <text x="485" y="95" font-size="36" font-weight="bold">4,520 <tspan font-size="16" fill="#10B981">▲ +8.1%</tspan></text>
+        
+        <!-- KPI 3 -->
+        <rect x="920" width="420" height="140" rx="12" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)" stroke-width="1.5" />
+        <text x="945" y="40" font-size="16" class="dim">Gross Profit margin</text>
+        <text x="945" y="95" font-size="36" font-weight="bold">34.8% <tspan font-size="16" fill="#10B981">▲ +2.3%</tspan></text>
+        
+        <!-- KPI 4 -->
+        <rect x="1380" width="420" height="140" rx="12" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)" stroke-width="1.5" />
+        <text x="1405" y="40" font-size="16" class="dim">Active Customer Growth</text>
+        <text x="1405" y="95" font-size="36" font-weight="bold">22.5% <tspan font-size="16" fill="#10B981">▲ +15.2%</tspan></text>
+    </g>
+    
+    <!-- MAIN Charts Row -->
+    <g transform="translate(40, 260)">
+        <!-- Chart 1: Revenue Trends -->
+        <rect width="890" height="420" rx="12" fill="rgba(15, 23, 42, 0.4)" stroke="rgba(255, 255, 255, 0.05)" />
+        <text x="35" y="40" font-size="18" font-weight="bold" fill="#38BDF8">Monthly Revenue Trends ($)</text>
+        
+        <g transform="translate(60, 100)" opacity="0.3">
+            <line x1="0" y1="240" x2="780" y2="240" stroke="#64748B" />
+            <line x1="0" y1="160" x2="780" y2="160" stroke="#64748B" stroke-dasharray="4 4" />
+            <line x1="0" y1="80" x2="780" y2="80" stroke="#64748B" stroke-dasharray="4 4" />
+        </g>
+        <path d="M 120 300 L 220 280 L 320 180 L 420 220 L 520 120 L 620 90 L 720 140" fill="none" stroke="url(#blue-cyan)" stroke-width="6" filter="url(#glow-cyan)" />
+        <g transform="translate(60, 360)" font-size="12" class="dim">
+            <text x="50" y="0">Jan</text><text x="150" y="0">Feb</text><text x="250" y="0">Mar</text><text x="350" y="0">Apr</text><text x="450" y="0">May</text><text x="550" y="0">Jun</text><text x="650" y="0">Jul</text>
+        </g>
+        
+        <!-- Chart 2: Regional Performance -->
+        <rect x="910" width="890" height="420" rx="12" fill="rgba(15, 23, 42, 0.4)" stroke="rgba(255, 255, 255, 0.05)" />
+        <text x="945" y="40" font-size="18" font-weight="bold" fill="#38BDF8">Regional Sales Performance</text>
+        
+        <!-- Bar Charts representation -->
+        <g transform="translate(980, 100)">
+            <!-- Bar 1: North -->
+            <text x="20" y="250" font-size="14" font-weight="bold">North</text>
+            <rect x="20" y="40" width="50" height="180" fill="url(#blue-cyan)" rx="4" filter="url(#glow-blue)" />
+            
+            <!-- Bar 2: South -->
+            <text x="180" y="250" font-size="14" font-weight="bold">South</text>
+            <rect x="180" y="90" width="50" height="130" fill="url(#purple-pink)" rx="4" />
+            
+            <!-- Bar 3: East -->
+            <text x="340" y="250" font-size="14" font-weight="bold">East</text>
+            <rect x="340" y="120" width="50" height="100" fill="url(#emerald-cyan)" rx="4" />
+            
+            <!-- Bar 4: West -->
+            <text x="500" y="250" font-size="14" font-weight="bold">West</text>
+            <rect x="500" y="70" width="50" height="150" fill="url(#yellow-orange)" rx="4" />
+        </g>
+    </g>
+    
+    <!-- AI INSIGHTS & FILTERS Row -->
+    <g transform="translate(40, 710)">
+        <!-- Filters panel -->
+        <rect width="420" height="330" rx="12" fill="rgba(15, 23, 42, 0.4)" stroke="rgba(255, 255, 255, 0.05)" />
+        <text x="30" y="40" font-size="18" font-weight="bold">Interactive Filters</text>
+        
+        <g transform="translate(30, 70)" font-size="14">
+            <text y="10" font-weight="bold">Region Selector</text>
+            <rect y="25" width="360" height="40" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.08)" />
+            <text x="15" y="50">North Region (Selected)</text>
+            
+            <text y="110" font-weight="bold">Department Group</text>
+            <rect y="125" width="360" height="40" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.08)" />
+            <text x="15" y="150">All Departments</text>
+            
+            <text y="210" font-weight="bold">Product Category</text>
+            <rect y="225" width="360" height="40" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.08)" />
+            <text x="15" y="250">Enterprise Software Licenses</text>
+        </g>
+        
+        <!-- AI Summary Recommendations -->
+        <rect x="460" width="1340" height="330" rx="12" fill="rgba(15, 23, 42, 0.6)" stroke="rgba(255, 255, 255, 0.05)" />
+        <text x="495" y="40" font-size="18" font-weight="bold" fill="url(#purple-pink)">AI Insights & Recommendations</text>
+        
+        <g transform="translate(495, 80)" font-size="15">
+            <circle cx="10" cy="20" r="5" fill="#3B82F6" />
+            <text x="30" y="25" font-weight="bold">Execute Campaign Scaling:</text>
+            <text x="30" y="50" class="dim">North region marketing campaign returned 14.2% higher ROI than other divisions. Recommend scaling budget.</text>
+            
+            <circle cx="10" cy="110" r="5" fill="#10B981" />
+            <text x="30" y="115" font-weight="bold">Inventory Realignment Required:</text>
+            <text x="30" y="140" class="dim">West region sales acceleration has outpaced current storage thresholds. Risk of stockout: High (72%).</text>
+            
+            <circle cx="10" cy="200" r="5" fill="#8B5CF6" />
+            <text x="30" y="205" font-weight="bold">Profit Margin Optimization:</text>
+            <text x="30" y="230" class="dim">Transitioning 10% of MySQL connections to read-replicas has lowered server overhead costs, boosting margins by 1.8%.</text>
+        </g>
+    </g>
+</svg>

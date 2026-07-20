@@ -1,0 +1,202 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+    <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="bg-grad" cx="50%" cy="50%" r="70%">
+        <stop offset="0%" stop-color="#0A1128" />
+        <stop offset="100%" stop-color="#05070F" />
+    </radialGradient>
+    
+    <!-- Neon Gradients -->
+    <linearGradient id="blue-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#3B82F6" />
+        <stop offset="100%" stop-color="#06B6D4" />
+    </linearGradient>
+    <linearGradient id="emerald-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#10B981" />
+        <stop offset="100%" stop-color="#34D399" />
+    </linearGradient>
+    <linearGradient id="purple-pink" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#8B5CF6" />
+        <stop offset="100%" stop-color="#EC4899" />
+    </linearGradient>
+    <linearGradient id="purple-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#7C3AED" />
+        <stop offset="100%" stop-color="#2563EB" />
+    </linearGradient>
+    <linearGradient id="yellow-orange" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#F59E0B" />
+        <stop offset="100%" stop-color="#EF4444" />
+    </linearGradient>
+    
+    <!-- Glassmorphic Gradients -->
+    <linearGradient id="glass" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#ffffff" stop-opacity="0.08" />
+        <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02" />
+    </linearGradient>
+    <linearGradient id="glass-border" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#ffffff" stop-opacity="0.15" />
+        <stop offset="100%" stop-color="#ffffff" stop-opacity="0.03" />
+    </linearGradient>
+    
+    <!-- Neon Glow Filters -->
+    <filter id="glow-cyan" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="6" result="blur" />
+        <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+        </feMerge>
+    </filter>
+    <filter id="glow-blue" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="8" result="blur" />
+        <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+        </feMerge>
+    </filter>
+    <filter id="glow-purple" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="8" result="blur" />
+        <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+        </feMerge>
+    </filter>
+    <filter id="glow-emerald" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="6" result="blur" />
+        <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+        </feMerge>
+    </filter>
+    <filter id="glow-red" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="6" result="blur" />
+        <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+        </feMerge>
+    </filter>
+    
+    <!-- Drop Shadow for Panels -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+        <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+</defs>
+
+    <style>
+    text {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        fill: #FFFFFF;
+    }
+    .title { font-weight: 800; }
+    .subtitle { fill: #94A3B8; font-weight: 500; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+    .dim { fill: #64748B; }
+    .cyan-text { fill: #22D3EE; }
+    .blue-text { fill: #38BDF8; }
+    .emerald-text { fill: #34D399; }
+    .purple-text { fill: #C084FC; }
+    .red-text { fill: #F87171; }
+    .yellow-text { fill: #FBBF24; }
+    .border-stroke { stroke: rgba(255, 255, 255, 0.08); stroke-width: 1px; }
+    .border-stroke-glow { stroke: #06B6D4; stroke-width: 1.5px; filter: url(#glow-cyan); }
+    .grid-line { stroke: rgba(255, 255, 255, 0.03); stroke-width: 1px; }
+</style>
+
+    <!-- Background -->
+    <rect width="1920" height="1080" fill="url(#bg-grad)" />
+    <line x1="0" y1="0" x2="0" y2="1080" class="grid-line" />
+<line x1="120" y1="0" x2="120" y2="1080" class="grid-line" />
+<line x1="240" y1="0" x2="240" y2="1080" class="grid-line" />
+<line x1="360" y1="0" x2="360" y2="1080" class="grid-line" />
+<line x1="480" y1="0" x2="480" y2="1080" class="grid-line" />
+<line x1="600" y1="0" x2="600" y2="1080" class="grid-line" />
+<line x1="720" y1="0" x2="720" y2="1080" class="grid-line" />
+<line x1="840" y1="0" x2="840" y2="1080" class="grid-line" />
+<line x1="960" y1="0" x2="960" y2="1080" class="grid-line" />
+<line x1="1080" y1="0" x2="1080" y2="1080" class="grid-line" />
+<line x1="1200" y1="0" x2="1200" y2="1080" class="grid-line" />
+<line x1="1320" y1="0" x2="1320" y2="1080" class="grid-line" />
+<line x1="1440" y1="0" x2="1440" y2="1080" class="grid-line" />
+<line x1="1560" y1="0" x2="1560" y2="1080" class="grid-line" />
+<line x1="1680" y1="0" x2="1680" y2="1080" class="grid-line" />
+<line x1="1800" y1="0" x2="1800" y2="1080" class="grid-line" />
+<line x1="0" y1="0" x2="1920" y2="0" class="grid-line" />
+<line x1="0" y1="120" x2="1920" y2="120" class="grid-line" />
+<line x1="0" y1="240" x2="1920" y2="240" class="grid-line" />
+<line x1="0" y1="360" x2="1920" y2="360" class="grid-line" />
+<line x1="0" y1="480" x2="1920" y2="480" class="grid-line" />
+<line x1="0" y1="600" x2="1920" y2="600" class="grid-line" />
+<line x1="0" y1="720" x2="1920" y2="720" class="grid-line" />
+<line x1="0" y1="840" x2="1920" y2="840" class="grid-line" />
+<line x1="0" y1="960" x2="1920" y2="960" class="grid-line" />
+
+    
+    <!-- iPhone Mockup Shell in the center -->
+    <g transform="translate(710, 40)">
+        <!-- Outer bezel -->
+        <rect width="500" height="1000" rx="60" fill="#1C1F2E" stroke="#4B5563" stroke-width="6" filter="url(#shadow)" />
+        <!-- Screen container -->
+        <rect x="15" y="15" width="470" height="970" rx="46" fill="#0A0F1D" />
+        
+        <!-- Dynamic Island -->
+        <rect x="160" y="30" width="180" height="35" rx="18" fill="#000000" />
+        
+        <!-- Screen Content -->
+        <g transform="translate(30, 95)" font-size="14">
+            <!-- App Name -->
+            <text x="15" y="20" font-size="20" class="title" fill="url(#blue-cyan)">AI DB Assistant</text>
+            <text x="410" y="20" font-size="12" fill="#10B981" text-anchor="end">● Connected</text>
+            
+            <!-- KPI Widget (Glassmorphism) -->
+            <g transform="translate(10, 50)">
+                <rect width="390" height="160" rx="16" fill="url(#glass)" stroke="url(#glass-border)" stroke-width="1.5" />
+                <text x="20" y="40" font-size="15" class="dim">Total Revenue (FY25)</text>
+                <text x="20" y="90" font-size="32" font-weight="bold">$1,245,890</text>
+                <text x="20" y="125" font-size="13" fill="#10B981">▲ +12.4% MoM growth</text>
+            </g>
+            
+            <!-- AI Summary Card -->
+            <g transform="translate(10, 230)">
+                <rect width="390" height="240" rx="16" fill="rgba(15, 23, 42, 0.6)" stroke="rgba(255,255,255,0.05)" />
+                <text x="20" y="35" font-size="16" font-weight="bold" fill="#38BDF8">Executive AI Summary</text>
+                
+                <g transform="translate(20, 70)" font-size="13">
+                    <circle cx="5" cy="5" r="3" fill="#3B82F6" />
+                    <text x="15" y="10" font-weight="bold">Revenue Spike in March</text>
+                    <text x="15" y="30" class="dim">North region sales grew 45% due</text>
+                    <text x="15" y="48" class="dim">to marketing campaign conversions.</text>
+                    
+                    <circle cx="5" cy="95" r="3" fill="#8B5CF6" />
+                    <text x="15" y="100" font-weight="bold">Steady Q2 Growth</text>
+                    <text x="15" y="120" class="dim">South region shows a steady 8% MoM</text>
+                    <text x="15" y="138" class="dim">growth trend through June.</text>
+                </g>
+            </g>
+            
+            <!-- Sales Chart widget -->
+            <g transform="translate(10, 490)">
+                <rect width="390" height="200" rx="16" fill="rgba(15, 23, 42, 0.4)" stroke="rgba(255,255,255,0.05)" />
+                <text x="20" y="30" font-size="15" font-weight="bold">Revenue Wave</text>
+                
+                <!-- Small sparkline path -->
+                <path d="M 60 140 L 120 110 L 180 60 L 240 85 L 300 40" fill="none" stroke="url(#blue-cyan)" stroke-width="4" filter="url(#glow-cyan)" />
+                <circle cx="300" cy="40" r="5" fill="#06B6D4" />
+            </g>
+            
+            <!-- Business Alert -->
+            <g transform="translate(10, 710)">
+                <rect width="390" height="80" rx="16" fill="rgba(245, 158, 11, 0.08)" stroke="#F59E0B" stroke-width="1.5" />
+                <text x="20" y="32" font-size="15" font-weight="bold" fill="#FBBF24">⚠️ Database Alert</text>
+                <text x="20" y="55" font-size="12" class="dim">West storage utilization at 82%. Scale recommended.</text>
+            </g>
+            
+            <!-- Bottom navigation bar -->
+            <g transform="translate(10, 810)">
+                <line x1="-10" y1="0" x2="410" y2="0" stroke="rgba(255,255,255,0.08)" />
+                <text x="40" y="35" font-size="12" font-weight="bold" fill="#38BDF8">🏠 Home</text>
+                <text x="130" y="35" font-size="12" class="dim">📊 Charts</text>
+                <text x="220" y="35" font-size="12" class="dim">📄 Reports</text>
+                <text x="310" y="35" font-size="12" class="dim">⚙️ Config</text>
+            </g>
+        </g>
+    </g>
+</svg>

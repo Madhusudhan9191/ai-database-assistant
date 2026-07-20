@@ -1,300 +1,115 @@
 # AI Database Assistant
 
-AI-powered Database Assistant that converts natural language questions into SQL queries using Groq LLM, executes them on PostgreSQL, and displays results through a React frontend.
-
-## Features
-
-* Natural Language to SQL using Groq LLM
-* PostgreSQL database integration
-* Dynamic database schema discovery
-* Query execution and result display
-* Query history tracking
-* Execution time tracking
-* Recent query suggestions
-* React frontend dashboard
-* FastAPI backend API
-* Dockerized backend
-* Dockerized frontend
-* Docker Compose multi-container setup
+An enterprise-ready business intelligence platform that translates plain-English questions into valid SQL queries using Groq LLMs, runs them securely against your target database, and renders interactive analytics, charts, and summaries.
 
 ---
 
-## Architecture
+## 🚀 Key Features
 
-User Question
-
-↓
-
-React Frontend
-
-↓
-
-FastAPI Backend
-
-↓
-
-Groq LLM
-
-↓
-
-Generated SQL
-
-↓
-
-PostgreSQL Database
-
-↓
-
-Results Returned to Frontend
+* **Natural Language to SQL**: Ask questions like *"show monthly revenue for 2025"* and watch the AI translate, execute, and explain the query.
+* **Multi-Database Support**: Connects dynamically to **PostgreSQL**, **MySQL**, and **Oracle** databases.
+* **Interactive Schema Explorer**: Inspect table structures, columns, row counts, and trigger safe table sample previews.
+* **AI Analytics & Visualization**: Automatically generates executive summaries, key findings, risks, and recommendations for query results, alongside chart recommendations (Bar, Line, Area, Pie).
+* **Dynamic Portfolio Dashboard**: Real-time KPI widgets and saved reports that synchronize immediately when you switch target databases.
+* **Automatic SQL Repair (Self-Healing)**: Translucently repairs syntax or mismatch errors using original DB engine exception feedback.
+* **Security Hardening**:
+  * Strict read-only SQL validation (blocks `DELETE`, `DROP`, `ALTER`, etc.).
+  * User authentication via JWT with automatic refresh tokens.
+  * Brute-force lockout protection (5 failed logins locks the account for 15 minutes).
+  * API rate limiting (10 attempts/min for login, 30 requests/min for ask).
+  * Full security audit logs in SQLite.
 
 ---
 
-## Tech Stack
+## 🛠️ Tech Stack
 
-### Backend
-
-* Python
-* FastAPI
-* PostgreSQL
-* Psycopg2
-* Groq API
-* Pydantic
-
-### Frontend
-
-* React
-* Vite
-* Axios
-
-### DevOps
-
-* Docker
-* Docker Compose
-* Git
-* GitHub
+* **Backend**: FastAPI (Python), Uvicorn, SQLite (`assistant_metadata.db` for metadata & authentication), Groq LLM API.
+* **Drivers**: `psycopg2-binary` (PostgreSQL), `pymysql` (MySQL), `oracledb` (Oracle).
+* **Frontend**: React 19, Vite 8, Recharts (visualizations), Axios (API client), XLSX (Excel export).
+* **DevOps**: Docker, Docker Compose.
 
 ---
 
-## Project Structure
+## 📂 Documentation
 
-```text
-AI-db-assistant/
-│
-├── app/
-│   ├── db/
-│   │   └── database.py
-│   │
-│   ├── models/
-│   │   └── schemas.py
-│   │
-│   ├── services/
-│   │   ├── ai_service.py
-│   │   ├── history_service.py
-│   │   ├── query_service.py
-│   │   └── schema_service.py
-│   │
-│   ├── config.py
-│   └── main.py
-│
-├── ai-db-frontend/
-│   ├── src/
-│   ├── Dockerfile
-│   └── package.json
-│
-├── Dockerfile
-├── docker-compose.yml
-├── requirements.txt
-├── .env.example
-└── README.md
-```
-
-## API Endpoints
-
-### Home
-
-```http
-GET /
-```
-
-Returns API status.
-
-### Ask Question
-
-```http
-POST /ask
-```
-
-Request:
-
-```json
-{
-  "question": "show all customers"
-}
-```
-
-Response:
-
-```json
-{
-  "question": "show all customers",
-  "generated_sql": "SELECT * FROM customers;",
-  "execution_time_ms": 7,
-  "data": [...]
-}
-```
-
-### Query History
-
-```http
-GET /history
-```
-
-### History Count
-
-```http
-GET /history/count
-```
-
-### Latest Queries
-
-```http
-GET /history/latest
-```
+For a comprehensive guide covering detailed system architecture, API endpoints, component design, database schemas, and security specifications, see:
+* **[DOCUMENTATION.md](./DOCUMENTATION.md)**
 
 ---
 
-## Environment Variables
+## ⚡ Quick Start (Using Docker)
 
-Create a `.env` file in the project root.
+The easiest way to launch the entire application stack is using Docker Desktop.
 
+### 1. Configure Environment Variables
+Create a `.env` file in the project root:
 ```env
-GROQ_API_KEY=your_groq_api_key
+# Groq API Configuration
+GROQ_API_KEY=your_groq_api_key_here
 
-DB_NAME=ai_db_assistant
-DB_USER=your_username
-DB_HOST=localhost
-DB_PORT=5432
+# SQLite Metadata Database Path (Keep default for Docker)
+METADATA_DB_PATH=/app/assistant_metadata.db
 ```
 
----
-
-## Running Locally
-
-### Backend
-
-```bash
-source venv/bin/activate
-
-pip install -r requirements.txt
-
-uvicorn app.main:app --reload
-```
-
-Backend:
-
-```text
-http://127.0.0.1:8000
-```
-
-Swagger Docs:
-
-```text
-http://127.0.0.1:8000/docs
-```
-
-### Frontend
-
-```bash
-cd ai-db-frontend
-
-npm install
-
-npm run dev
-```
-
-Frontend:
-
-```text
-http://localhost:5173
-```
-
----
-
-## Running with Docker
-
-Build and run the entire application:
-
+### 2. Run the Stack
+Start the containers using Docker Compose:
 ```bash
 docker compose up --build
 ```
+* **React Frontend**: [http://localhost:5173](http://localhost:5173)
+* **FastAPI Backend**: [http://localhost:8000](http://localhost:8000)
+* **Swagger API Documentation**: [http://localhost:8000/docs](http://localhost:8000/docs)
 
-Backend:
+---
 
-```text
-http://localhost:8000
-```
+## 🔧 Manual Local Setup (Without Docker)
 
-Frontend:
+### 1. Set Up Backend
+1. Initialize virtual environment:
+   ```bash
+   python -m venv venv
+   source venv/Scripts/activate  # On Windows: venv\Scripts\activate
+   ```
+2. Install requirements:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Set your environment variables in `.env` (ensure a local SQLite path):
+   ```env
+   GROQ_API_KEY=your_groq_api_key_here
+   METADATA_DB_PATH=assistant_metadata.db
+   ```
+4. Start the server:
+   ```bash
+   uvicorn app.main:app --reload
+   ```
 
-```text
-http://localhost:5173
-```
+### 2. Set Up Frontend
+1. Navigate to the client directory:
+   ```bash
+   cd ai-db-frontend
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the dev server:
+   ```bash
+   npm run dev
+   ```
 
-Stop containers:
+---
+
+## 🧪 Verification & Diagnostics
+
+To run the full suite of automated unit and diagnostic verification tests:
 
 ```bash
-docker compose down
+# Run all unit tests
+python -m unittest discover -s tests
+
+# Verify specific modules
+python test_security_hardening.py
+python test_sprint6_ops.py
+python test_sprint7_admin.py
 ```
-
----
-
-## Example Questions
-
-```text
-show all customers
-
-show customer count
-
-show total orders for each customer
-
-which customer placed the most orders
-
-show all orders
-
-show customers with their orders
-```
-
----
-
-## Current Version
-
-### V1.0
-
-Implemented:
-
-* Natural Language to SQL
-* PostgreSQL Query Execution
-* Query History
-* Recent Queries
-* Execution Time Tracking
-* React Frontend
-* Dockerized Backend
-* Dockerized Frontend
-* Docker Compose
-
-### Planned (V1.1)
-
-* AI-generated insights from query results
-* Query result summarization
-* Business analytics suggestions
-* Data trend detection
-
----
-
-## Author
-
-Madhu Sudhan Suravaram
-
-B.Tech Computer Science (AI & ML)
-
-AI Database Assistant Portfolio Project

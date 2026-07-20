@@ -1,0 +1,300 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+    <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="bg-grad" cx="50%" cy="50%" r="70%">
+        <stop offset="0%" stop-color="#0A1128" />
+        <stop offset="100%" stop-color="#05070F" />
+    </radialGradient>
+    
+    <!-- Neon Gradients -->
+    <linearGradient id="blue-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#3B82F6" />
+        <stop offset="100%" stop-color="#06B6D4" />
+    </linearGradient>
+    <linearGradient id="emerald-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#10B981" />
+        <stop offset="100%" stop-color="#34D399" />
+    </linearGradient>
+    <linearGradient id="purple-pink" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#8B5CF6" />
+        <stop offset="100%" stop-color="#EC4899" />
+    </linearGradient>
+    <linearGradient id="purple-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#7C3AED" />
+        <stop offset="100%" stop-color="#2563EB" />
+    </linearGradient>
+    <linearGradient id="yellow-orange" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#F59E0B" />
+        <stop offset="100%" stop-color="#EF4444" />
+    </linearGradient>
+    
+    <!-- Glassmorphic Gradients -->
+    <linearGradient id="glass" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#ffffff" stop-opacity="0.08" />
+        <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02" />
+    </linearGradient>
+    <linearGradient id="glass-border" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#ffffff" stop-opacity="0.15" />
+        <stop offset="100%" stop-color="#ffffff" stop-opacity="0.03" />
+    </linearGradient>
+    
+    <!-- Neon Glow Filters -->
+    <filter id="glow-cyan" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="6" result="blur" />
+        <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+        </feMerge>
+    </filter>
+    <filter id="glow-blue" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="8" result="blur" />
+        <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+        </feMerge>
+    </filter>
+    <filter id="glow-purple" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="8" result="blur" />
+        <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+        </feMerge>
+    </filter>
+    <filter id="glow-emerald" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="6" result="blur" />
+        <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+        </feMerge>
+    </filter>
+    <filter id="glow-red" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="6" result="blur" />
+        <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+        </feMerge>
+    </filter>
+    
+    <!-- Drop Shadow for Panels -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+        <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+</defs>
+
+    <style>
+    text {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        fill: #FFFFFF;
+    }
+    .title { font-weight: 800; }
+    .subtitle { fill: #94A3B8; font-weight: 500; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+    .dim { fill: #64748B; }
+    .cyan-text { fill: #22D3EE; }
+    .blue-text { fill: #38BDF8; }
+    .emerald-text { fill: #34D399; }
+    .purple-text { fill: #C084FC; }
+    .red-text { fill: #F87171; }
+    .yellow-text { fill: #FBBF24; }
+    .border-stroke { stroke: rgba(255, 255, 255, 0.08); stroke-width: 1px; }
+    .border-stroke-glow { stroke: #06B6D4; stroke-width: 1.5px; filter: url(#glow-cyan); }
+    .grid-line { stroke: rgba(255, 255, 255, 0.03); stroke-width: 1px; }
+</style>
+
+    <!-- Background -->
+    <rect width="1920" height="1080" fill="url(#bg-grad)" />
+    <line x1="0" y1="0" x2="0" y2="1080" class="grid-line" />
+<line x1="100" y1="0" x2="100" y2="1080" class="grid-line" />
+<line x1="200" y1="0" x2="200" y2="1080" class="grid-line" />
+<line x1="300" y1="0" x2="300" y2="1080" class="grid-line" />
+<line x1="400" y1="0" x2="400" y2="1080" class="grid-line" />
+<line x1="500" y1="0" x2="500" y2="1080" class="grid-line" />
+<line x1="600" y1="0" x2="600" y2="1080" class="grid-line" />
+<line x1="700" y1="0" x2="700" y2="1080" class="grid-line" />
+<line x1="800" y1="0" x2="800" y2="1080" class="grid-line" />
+<line x1="900" y1="0" x2="900" y2="1080" class="grid-line" />
+<line x1="1000" y1="0" x2="1000" y2="1080" class="grid-line" />
+<line x1="1100" y1="0" x2="1100" y2="1080" class="grid-line" />
+<line x1="1200" y1="0" x2="1200" y2="1080" class="grid-line" />
+<line x1="1300" y1="0" x2="1300" y2="1080" class="grid-line" />
+<line x1="1400" y1="0" x2="1400" y2="1080" class="grid-line" />
+<line x1="1500" y1="0" x2="1500" y2="1080" class="grid-line" />
+<line x1="1600" y1="0" x2="1600" y2="1080" class="grid-line" />
+<line x1="1700" y1="0" x2="1700" y2="1080" class="grid-line" />
+<line x1="1800" y1="0" x2="1800" y2="1080" class="grid-line" />
+<line x1="1900" y1="0" x2="1900" y2="1080" class="grid-line" />
+<line x1="0" y1="0" x2="1920" y2="0" class="grid-line" />
+<line x1="0" y1="100" x2="1920" y2="100" class="grid-line" />
+<line x1="0" y1="200" x2="1920" y2="200" class="grid-line" />
+<line x1="0" y1="300" x2="1920" y2="300" class="grid-line" />
+<line x1="0" y1="400" x2="1920" y2="400" class="grid-line" />
+<line x1="0" y1="500" x2="1920" y2="500" class="grid-line" />
+<line x1="0" y1="600" x2="1920" y2="600" class="grid-line" />
+<line x1="0" y1="700" x2="1920" y2="700" class="grid-line" />
+<line x1="0" y1="800" x2="1920" y2="800" class="grid-line" />
+<line x1="0" y1="900" x2="1920" y2="900" class="grid-line" />
+<line x1="0" y1="1000" x2="1920" y2="1000" class="grid-line" />
+
+    
+    <!-- Header -->
+    <g>
+        <rect width="1920" height="60" fill="rgba(15, 23, 42, 0.8)" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
+        <text x="30" y="38" font-size="22" font-weight="bold">⚙️ Database Connection Manager</text>
+        <text x="1650" y="36" font-size="16" class="dim">Server: localhost:8000</text>
+    </g>
+    
+    <!-- LEFT PANEL: Connections List -->
+    <g transform="translate(10, 70)">
+        <rect width="360" height="1000" rx="12" fill="rgba(15, 23, 42, 0.6)" stroke="rgba(255, 255, 255, 0.05)" stroke-width="1.5" />
+        <text x="25" y="40" font-size="18" font-weight="bold" fill="#38BDF8">Active Connections</text>
+        
+        <!-- Connection 1 -->
+        <g transform="translate(20, 60)">
+            <rect width="320" height="140" rx="10" fill="rgba(16, 185, 129, 0.08)" stroke="rgba(16, 185, 129, 0.3)" stroke-width="1.5" />
+            <circle cx="30" cy="30" r="6" fill="#10B981" />
+            <text x="50" y="35" font-size="16" font-weight="bold">🐘 PostgreSQL (prod_db)</text>
+            <text x="30" y="70" font-size="13" class="dim">Host: <tspan fill="#FFF">10.0.4.82</tspan> | Port: <tspan fill="#FFF">5432</tspan></text>
+            <text x="30" y="95" font-size="13" class="dim">Latency: <tspan fill="#10B981">12ms</tspan> | Health: <tspan fill="#10B981">100%</tspan></text>
+            <text x="30" y="120" font-size="12" class="dim">Status: Connected</text>
+        </g>
+        
+        <!-- Connection 2 -->
+        <g transform="translate(20, 220)">
+            <rect width="320" height="140" rx="10" fill="rgba(245, 158, 11, 0.05)" stroke="rgba(245, 158, 11, 0.2)" stroke-width="1" />
+            <circle cx="30" cy="30" r="6" fill="#F59E0B" />
+            <text x="50" y="35" font-size="16" font-weight="bold">🐬 MySQL (analytics_replica)</text>
+            <text x="30" y="70" font-size="13" class="dim">Host: <tspan fill="#FFF">10.0.4.83</tspan> | Port: <tspan fill="#FFF">3306</tspan></text>
+            <text x="30" y="95" font-size="13" class="dim">Latency: <tspan fill="#F59E0B">42ms</tspan> | Health: <tspan fill="#10B981">92%</tspan></text>
+            <text x="30" y="120" font-size="12" class="dim">Status: Connected</text>
+        </g>
+        
+        <!-- Connection 3 -->
+        <g transform="translate(20, 380)">
+            <rect width="320" height="140" rx="10" fill="rgba(255,255,255,0.01)" stroke="rgba(255,255,255,0.03)" stroke-width="1" />
+            <circle cx="30" cy="30" r="6" fill="#EF4444" />
+            <text x="50" y="35" font-size="16" font-weight="bold">🔴 Oracle DB (warehouse_legacy)</text>
+            <text x="30" y="70" font-size="13" class="dim">Host: <tspan fill="#FFF">10.0.1.200</tspan> | Port: <tspan fill="#FFF">1521</tspan></text>
+            <text x="30" y="95" font-size="13" class="dim">Latency: <tspan fill="#EF4444">ERR</tspan> | Health: <tspan fill="#EF4444">Offline</tspan></text>
+            <text x="30" y="120" font-size="12" class="dim">Status: Connection Timeout</text>
+        </g>
+    </g>
+    
+    <!-- CENTER PANEL: Database Overview & Tables -->
+    <g transform="translate(380, 70)">
+        <rect width="1120" height="1000" rx="12" fill="rgba(15, 23, 42, 0.4)" stroke="rgba(255, 255, 255, 0.05)" stroke-width="1.5" />
+        
+        <!-- Connection Config Form / Overview -->
+        <g transform="translate(40, 40)">
+            <text x="0" y="25" font-size="20" font-weight="bold">Active Target: PostgreSQL Details</text>
+            <rect y="45" width="1040" height="180" rx="12" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)" />
+            
+            <g transform="translate(30, 80)">
+                <text x="0" y="10" font-size="15" class="dim">Database Driver</text>
+                <text x="0" y="40" font-size="20" font-weight="bold" fill="#38BDF8">psycopg2-binary</text>
+                
+                <text x="250" y="10" font-size="15" class="dim">Active Database</text>
+                <text x="250" y="40" font-size="20" font-weight="bold" fill="#FFFFFF">postgresql_prod</text>
+                
+                <text x="500" y="10" font-size="15" class="dim">Schema Mode</text>
+                <text x="500" y="40" font-size="20" font-weight="bold" fill="#10B981">Auto-Inspected</text>
+                
+                <text x="750" y="10" font-size="15" class="dim">Read-Only Safety</text>
+                <text x="750" y="40" font-size="20" font-weight="bold" fill="#10B981">🛡️ Enabled</text>
+            </g>
+        </g>
+        
+        <!-- Database Objects Grid -->
+        <g transform="translate(40, 260)">
+            <text x="0" y="25" font-size="18" font-weight="bold" fill="#38BDF8">Database Objects Overview</text>
+            
+            <!-- Cards for statistics -->
+            <g transform="translate(0, 45)">
+                <!-- Tables Card -->
+                <rect width="230" height="130" rx="10" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)" />
+                <text x="20" y="40" font-size="16" class="dim">Tables</text>
+                <text x="20" y="95" font-size="36" font-weight="bold" fill="#FFFFFF">12</text>
+                
+                <!-- Views Card -->
+                <rect x="270" width="230" height="130" rx="10" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)" />
+                <text x="290" y="40" font-size="16" class="dim">Views</text>
+                <text x="290" y="95" font-size="36" font-weight="bold" fill="#FFFFFF">3</text>
+                
+                <!-- Indexes Card -->
+                <rect x="540" width="230" height="130" rx="10" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)" />
+                <text x="560" y="40" font-size="16" class="dim">Indexes</text>
+                <text x="560" y="95" font-size="36" font-weight="bold" fill="#FFFFFF">34</text>
+                
+                <!-- Relationships Card -->
+                <rect x="810" width="230" height="130" rx="10" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)" />
+                <text x="830" y="40" font-size="16" class="dim">FK Relationships</text>
+                <text x="830" y="95" font-size="36" font-weight="bold" fill="#FFFFFF">18</text>
+            </g>
+        </g>
+        
+        <!-- Table detail list -->
+        <g transform="translate(40, 480)">
+            <text x="0" y="25" font-size="18" font-weight="bold">Inspected Schemas</text>
+            <rect y="40" width="1040" height="440" rx="12" fill="rgba(15, 23, 42, 0.4)" stroke="rgba(255,255,255,0.05)" />
+            
+            <!-- Table Header -->
+            <rect x="0" y="40" width="1040" height="40" fill="rgba(255,255,255,0.02)" />
+            <text x="30" y="65" font-size="14" font-weight="bold" fill="#94A3B8">Table Name</text>
+            <text x="250" y="65" font-size="14" font-weight="bold" fill="#94A3B8">Estimated Rows</text>
+            <text x="450" y="65" font-size="14" font-weight="bold" fill="#94A3B8">Columns Count</text>
+            <text x="650" y="65" font-size="14" font-weight="bold" fill="#94A3B8">Primary Key</text>
+            <text x="850" y="65" font-size="14" font-weight="bold" fill="#94A3B8">Status</text>
+            
+            <g transform="translate(30, 110)" font-size="14">
+                <text y="0">users</text> <text x="220" y="0">1,450,230</text> <text x="420" y="0">8</text> <text x="620" y="0" class="cyan-text">id</text> <text x="820" y="0" fill="#10B981">Cached</text>
+                <line x1="-30" y1="15" x2="1010" y2="15" stroke="rgba(255,255,255,0.03)" />
+                
+                <text y="40">orders</text> <text x="220" y="40">8,941,200</text> <text x="420" y="40">12</text> <text x="620" y="40" class="cyan-text">id</text> <text x="820" y="40" fill="#10B981">Cached</text>
+                <line x1="-30" y1="55" x2="1010" y2="55" stroke="rgba(255,255,255,0.03)" />
+                
+                <text y="80">products</text> <text x="220" y="80">142,500</text> <text x="420" y="80">6</text> <text x="620" y="80" class="cyan-text">id</text> <text x="820" y="80" fill="#10B981">Cached</text>
+                <line x1="-30" y1="95" x2="1010" y2="95" stroke="rgba(255,255,255,0.03)" />
+                
+                <text y="120">transactions</text> <text x="220" y="120">24,510,920</text> <text x="420" y="120">10</text> <text x="620" y="120" class="cyan-text">id</text> <text x="820" y="120" fill="#3B82F6">Inspecting...</text>
+            </g>
+        </g>
+    </g>
+    
+    <!-- RIGHT PANEL: Connection stats & Authentication -->
+    <g transform="translate(1510, 70)">
+        <rect width="400" height="1000" rx="12" fill="rgba(15, 23, 42, 0.6)" stroke="rgba(255, 255, 255, 0.05)" stroke-width="1.5" />
+        <text x="25" y="40" font-size="18" font-weight="bold" fill="url(#purple-pink)">Performance & Audit</text>
+        <line x1="25" y1="60" x2="375" y2="60" stroke="rgba(255,255,255,0.05)" />
+        
+        <!-- Auth Metadata -->
+        <g transform="translate(20, 80)">
+            <text x="0" y="20" font-size="15" font-weight="bold">Authentication</text>
+            <rect y="30" width="360" height="150" rx="10" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)" />
+            <g transform="translate(20, 60)" font-size="13">
+                <text y="0" class="dim">Method: <tspan fill="#FFF">JWT OAuth2 Bearer</tspan></text>
+                <text y="25" class="dim">Active Token Exp: <tspan fill="#F59E0B">14 mins left</tspan></text>
+                <text y="50" class="dim">Role: <tspan fill="#10B981" font-weight="bold">read_only_analyst</tspan></text>
+                <text y="75" class="dim">Token Refresh: <tspan fill="#10B981">Automatic</tspan></text>
+            </g>
+        </g>
+        
+        <!-- Performance Logs -->
+        <g transform="translate(20, 270)">
+            <text x="0" y="20" font-size="15" font-weight="bold">Recent Performance Logs</text>
+            <rect y="30" width="360" height="420" rx="10" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)" />
+            
+            <g transform="translate(20, 65)" font-size="12">
+                <text y="0" font-weight="bold">SELECT * FROM users LIMIT 10</text>
+                <text y="20" class="dim">Time: <tspan fill="#10B981">4ms</tspan> | Result: <tspan fill="#10B981">10 rows</tspan></text>
+                <line x1="-10" y1="30" x2="330" y2="30" stroke="rgba(255,255,255,0.03)" />
+                
+                <text y="55" font-weight="bold" fill="#38BDF8">SELECT SUM(total_amount) FROM orders...</text>
+                <text y="75" class="dim">Time: <tspan fill="#10B981">12ms</tspan> | Result: <tspan fill="#10B981">6 rows</tspan></text>
+                <line x1="-10" y1="85" x2="330" y2="85" stroke="rgba(255,255,255,0.03)" />
+                
+                <text y="110" font-weight="bold" fill="#EF4444">DELETE FROM orders WHERE id = 1</text>
+                <text y="130" class="red-text">Blocked: Insufficient Privileges (Read-Only)</text>
+                <line x1="-10" y1="140" x2="330" y2="140" stroke="rgba(255,255,255,0.03)" />
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,120 @@
+================================================================================
+           ABOUT: AI-DRIVEN SELF-HEALING BI & DATA ANALYTICS PLATFORM
+               (Professional Overview, Telemetry, and Deployment)
+================================================================================
+
+This document provides a comprehensive technical overview of the AI Database 
+Assistant platform. It is designed to help a software developer or analyst with 
+2+ years of experience communicate the project's architecture, development steps, 
+and business value directly to Clients, Engineering Managers, and the CEO.
+
+--------------------------------------------------------------------------------
+1. EXECUTIVE SUMMARY: WHAT IS THIS PLATFORM?
+--------------------------------------------------------------------------------
+The platform is an AI-powered, self-healing Business Intelligence (BI) tool. 
+It enables non-technical business users to query databases in plain English. 
+Behind the scenes, it leverages Large Language Models (LLMs) to construct and 
+execute structured SQL queries, returning clean data tables, automated analytical 
+insights, and dynamic visual charts.
+
+Key Technical Advantages:
+* No-Code Querying: Translates natural language into database execution code.
+* Intelligent SQL Auto-Repair: Automatically heals syntax or schema errors.
+* Containerized Portability: Microservices setup for instant deployment.
+* Enterprise Telemetry: Real-time logging, user audit trails, and admin analytics.
+
+--------------------------------------------------------------------------------
+2. ARCHITECTURAL EVOLUTION & FEATURE STEPS
+--------------------------------------------------------------------------------
+
+The project has been scaled through structured sprints to align with enterprise-grade 
+production and monitoring standards:
+
+🚀 STEP 1: Core NL-to-SQL Translation & Execution Engine
+Implemented LLM integration to convert user questions to SQL queries. Built a 
+secure execution pipeline that connects to relational databases, executes 
+queries safely, and formats results.
+
+🚀 STEP 2: Analytical Visualization & KPI Extraction
+Added automated chart selection using heuristics and built an insight generation 
+service. Results are automatically plotted as interactive charts (bar, line, 
+pie, area) alongside plain-English summaries and critical KPI card metrics.
+
+🚀 STEP 3: Multi-User Isolation & Session Control
+Introduced JWT-based bearer authentication and password hashing (bcrypt). All 
+stored query logs, saved dashboards, and favorite queries are scoped directly to 
+the logged-in user's database ID.
+
+🚀 STEP 4: Production Operations & Centralized Logging (Sprint 6)
+* Environment Isolation: Converted settings to use Pydantic Settings. Moved 
+  secrets out of code into a root-level `.env` file.
+* Centralized Logging: Configured rotating file logging handlers (`logs/app.log`, 
+  `errors.log`, `auth.log`) capped at 5MB with 5 backups.
+* Global Exception Handlers: Handled system crashes gracefully by logging stack 
+  traces and sanitizing public API error responses.
+* Auto-Repair Engine: Integrated a SQL-repair agent. If a query execution fails, 
+  the system catches the DB error, feeds it back to the repair service to reformulate 
+  the query, and retries execution automatically.
+
+🚀 STEP 5: Live Telemetry & Admin Command Panel (Sprint 7)
+* Telemetry DB Columns: Migrated database schema to track metrics per execution 
+  (`repair_attempted`, `repaired`, and `is_admin` flags).
+* Uptime & Health APIs: Exposed system health (`/api/health`) and build metadata 
+  endpoints (`/api/version`) reporting server uptime.
+* Admin Panel API: Created a secure, server-side RBAC-restricted `/admin/stats` 
+  endpoint to block non-admins with a `403 Forbidden` error.
+* Glassmorphic Control Panel: Built a React Admin Panel highlighting live KPIs, 
+  uptime statistics, and historical daily query trends using Recharts.
+
+--------------------------------------------------------------------------------
+3. RUN & DEPLOYMENT INSTRUCTIONS
+--------------------------------------------------------------------------------
+
+The platform is designed to run seamlessly in either local dev or container modes.
+
+■ Docker Orchestration (Recommended for Production/Demos):
+To build images and spin up the complete network, execute from the root directory:
+   > docker compose up --build
+* Nginx serves the Vite React frontend on port 5173 (redirects calls to backend).
+* Uvicorn runs the FastAPI backend on port 8000.
+* Volumes are mapped to persist logs and metadata databases across restarts.
+
+■ Local Development Setup:
+1. BACKEND:
+   * Initialize Python Virtual Environment: `venv\Scripts\activate`
+   * Start FastAPI Web Server: `uvicorn app.main:app --reload`
+2. FRONTEND:
+   * Change directory: `cd ai-db-frontend`
+   * Run Vite developer server: `npm run dev`
+
+--------------------------------------------------------------------------------
+4. STAKEHOLDER COMMUNICATION STRATEGY (How to Pitch the Project)
+--------------------------------------------------------------------------------
+
+Here is how you should pitch this application depending on who you are talking to:
+
+💬 PITCH A: To the CEO (Focus on ROI, Decision-Making & Market Readiness)
+"We have developed a self-service BI platform that democratizes data access. By 
+eliminating the SQL bottleneck, any business user can generate live visual 
+dashboards in seconds. This speeds up decision-making, reduces the load on internal 
+data teams, and increases operational efficiency. We have also built a dedicated 
+Admin telemetry dashboard that monitors usage patterns, active user cohorts, and 
+system health metrics out of the box."
+
+💬 PITCH B: To the Engineering Manager (Focus on Modularity, Health & Resilience)
+"The platform is built on a modular FastAPI and React/Vite architecture. We have 
+secured it using JWT session validation and enforced a strict read-only SQL compiler 
+check. For reliability, we implemented dynamic SQL self-healing: if an LLM query 
+errors out, the system catches it, heals the query structure, and succeeds on 
+the retry. The environment is fully containerized via Docker Compose, uses 
+Pydantic Settings for config safety, and pipes logs into rotating storage handlers 
+for app events, exceptions, and authentication audits."
+
+💬 PITCH C: To the Client (Focus on Usability, Security & Visualization)
+"This dashboard provides you with direct access to your analytics. You just write 
+your question in normal language, and the system instantly generates tables, 
+summaries, and charts. Your dashboard reports and favorites can be customized and 
+saved. Because your data safety is our priority, all databases are isolated behind 
+secure login sessions, ensuring your business intelligence remains entirely private."
+
+================================================================================

@@ -1,0 +1,339 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+    <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="bg-grad" cx="50%" cy="50%" r="70%">
+        <stop offset="0%" stop-color="#0A1128" />
+        <stop offset="100%" stop-color="#05070F" />
+    </radialGradient>
+    
+    <!-- Neon Gradients -->
+    <linearGradient id="blue-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#3B82F6" />
+        <stop offset="100%" stop-color="#06B6D4" />
+    </linearGradient>
+    <linearGradient id="emerald-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#10B981" />
+        <stop offset="100%" stop-color="#34D399" />
+    </linearGradient>
+    <linearGradient id="purple-pink" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#8B5CF6" />
+        <stop offset="100%" stop-color="#EC4899" />
+    </linearGradient>
+    <linearGradient id="purple-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#7C3AED" />
+        <stop offset="100%" stop-color="#2563EB" />
+    </linearGradient>
+    <linearGradient id="yellow-orange" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#F59E0B" />
+        <stop offset="100%" stop-color="#EF4444" />
+    </linearGradient>
+    
+    <!-- Glassmorphic Gradients -->
+    <linearGradient id="glass" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#ffffff" stop-opacity="0.08" />
+        <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02" />
+    </linearGradient>
+    <linearGradient id="glass-border" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#ffffff" stop-opacity="0.15" />
+        <stop offset="100%" stop-color="#ffffff" stop-opacity="0.03" />
+    </linearGradient>
+    
+    <!-- Neon Glow Filters -->
+    <filter id="glow-cyan" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="6" result="blur" />
+        <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+        </feMerge>
+    </filter>
+    <filter id="glow-blue" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="8" result="blur" />
+        <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+        </feMerge>
+    </filter>
+    <filter id="glow-purple" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="8" result="blur" />
+        <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+        </feMerge>
+    </filter>
+    <filter id="glow-emerald" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="6" result="blur" />
+        <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+        </feMerge>
+    </filter>
+    <filter id="glow-red" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="6" result="blur" />
+        <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+        </feMerge>
+    </filter>
+    
+    <!-- Drop Shadow for Panels -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+        <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+</defs>
+
+    <style>
+    text {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        fill: #FFFFFF;
+    }
+    .title { font-weight: 800; }
+    .subtitle { fill: #94A3B8; font-weight: 500; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+    .dim { fill: #64748B; }
+    .cyan-text { fill: #22D3EE; }
+    .blue-text { fill: #38BDF8; }
+    .emerald-text { fill: #34D399; }
+    .purple-text { fill: #C084FC; }
+    .red-text { fill: #F87171; }
+    .yellow-text { fill: #FBBF24; }
+    .border-stroke { stroke: rgba(255, 255, 255, 0.08); stroke-width: 1px; }
+    .border-stroke-glow { stroke: #06B6D4; stroke-width: 1.5px; filter: url(#glow-cyan); }
+    .grid-line { stroke: rgba(255, 255, 255, 0.03); stroke-width: 1px; }
+</style>
+
+    <!-- Background -->
+    <rect width="1920" height="1080" fill="url(#bg-grad)" />
+    <line x1="0" y1="0" x2="0" y2="1080" class="grid-line" />
+<line x1="100" y1="0" x2="100" y2="1080" class="grid-line" />
+<line x1="200" y1="0" x2="200" y2="1080" class="grid-line" />
+<line x1="300" y1="0" x2="300" y2="1080" class="grid-line" />
+<line x1="400" y1="0" x2="400" y2="1080" class="grid-line" />
+<line x1="500" y1="0" x2="500" y2="1080" class="grid-line" />
+<line x1="600" y1="0" x2="600" y2="1080" class="grid-line" />
+<line x1="700" y1="0" x2="700" y2="1080" class="grid-line" />
+<line x1="800" y1="0" x2="800" y2="1080" class="grid-line" />
+<line x1="900" y1="0" x2="900" y2="1080" class="grid-line" />
+<line x1="1000" y1="0" x2="1000" y2="1080" class="grid-line" />
+<line x1="1100" y1="0" x2="1100" y2="1080" class="grid-line" />
+<line x1="1200" y1="0" x2="1200" y2="1080" class="grid-line" />
+<line x1="1300" y1="0" x2="1300" y2="1080" class="grid-line" />
+<line x1="1400" y1="0" x2="1400" y2="1080" class="grid-line" />
+<line x1="1500" y1="0" x2="1500" y2="1080" class="grid-line" />
+<line x1="1600" y1="0" x2="1600" y2="1080" class="grid-line" />
+<line x1="1700" y1="0" x2="1700" y2="1080" class="grid-line" />
+<line x1="1800" y1="0" x2="1800" y2="1080" class="grid-line" />
+<line x1="1900" y1="0" x2="1900" y2="1080" class="grid-line" />
+<line x1="0" y1="0" x2="1920" y2="0" class="grid-line" />
+<line x1="0" y1="100" x2="1920" y2="100" class="grid-line" />
+<line x1="0" y1="200" x2="1920" y2="200" class="grid-line" />
+<line x1="0" y1="300" x2="1920" y2="300" class="grid-line" />
+<line x1="0" y1="400" x2="1920" y2="400" class="grid-line" />
+<line x1="0" y1="500" x2="1920" y2="500" class="grid-line" />
+<line x1="0" y1="600" x2="1920" y2="600" class="grid-line" />
+<line x1="0" y1="700" x2="1920" y2="700" class="grid-line" />
+<line x1="0" y1="800" x2="1920" y2="800" class="grid-line" />
+<line x1="0" y1="900" x2="1920" y2="900" class="grid-line" />
+<line x1="0" y1="1000" x2="1920" y2="1000" class="grid-line" />
+
+    
+    <!-- Top Header -->
+    <g>
+        <rect width="1920" height="60" fill="rgba(15, 23, 42, 0.8)" stroke="rgba(255, 255, 255, 0.05)" stroke-width="1" />
+        <text x="30" y="38" font-size="24" class="title" fill="url(#blue-cyan)">AI Database Assistant</text>
+        <rect x="330" y="12" width="220" height="36" rx="8" fill="rgba(16, 185, 129, 0.15)" stroke="rgba(16, 185, 129, 0.3)" stroke-width="1.5" />
+        <text x="345" y="35" font-size="14" class="emerald-text" font-weight="bold">🛡️ Security Layer Active</text>
+        <text x="1650" y="36" font-size="16" fill="#94A3B8">Logged in: <tspan fill="#FFF" font-weight="bold">JWT Session</tspan></text>
+    </g>
+    
+    <!-- 3 COLUMN LAYOUT -->
+    
+    <!-- LEFT PANEL: Database & Schema Explorer -->
+    <g transform="translate(10, 70)">
+        <rect width="320" height="1000" rx="16" fill="rgba(15, 23, 42, 0.6)" stroke="rgba(255, 255, 255, 0.05)" stroke-width="1.5" />
+        <text x="25" y="40" font-size="18" font-weight="bold" fill="#38BDF8">Database Connections</text>
+        
+        <!-- Connections List -->
+        <g transform="translate(20, 60)">
+            <!-- Postgres -->
+            <rect width="280" height="50" rx="10" fill="rgba(56, 189, 248, 0.08)" stroke="rgba(56, 189, 248, 0.2)" stroke-width="1" />
+            <circle cx="25" cy="25" r="5" fill="#10B981" />
+            <text x="45" y="31" font-size="14" font-weight="bold">🐘 PostgreSQL (Connected)</text>
+            
+            <!-- MySQL -->
+            <rect y="60" width="280" height="50" rx="10" fill="rgba(255,255,255,0.01)" stroke="rgba(255,255,255,0.03)" stroke-width="1" />
+            <circle cx="25" cy="85" r="5" fill="#64748B" />
+            <text x="45" y="91" font-size="14" class="dim">🐬 MySQL (Inactive)</text>
+            
+            <!-- Oracle -->
+            <rect y="120" width="280" height="50" rx="10" fill="rgba(255,255,255,0.01)" stroke="rgba(255,255,255,0.03)" stroke-width="1" />
+            <circle cx="25" cy="145" r="5" fill="#64748B" />
+            <text x="45" y="151" font-size="14" class="dim">🔴 Oracle DB (Inactive)</text>
+        </g>
+        
+        <!-- Schema Explorer Tree -->
+        <text x="25" y="270" font-size="18" font-weight="bold" fill="#E2E8F0">Schema Explorer</text>
+        <line x1="25" y1="290" x2="295" y2="290" stroke="rgba(255,255,255,0.05)" />
+        
+        <g transform="translate(25, 310)">
+            <text x="0" y="20" font-size="15" font-weight="bold">📂 Tables</text>
+            <text x="20" y="50" font-size="14" class="dim">田 users</text>
+            <text x="40" y="75" font-size="13" class="dim">id (INT, PK)</text>
+            <text x="40" y="95" font-size="13" class="dim">email (VARCHAR)</text>
+            
+            <text x="20" y="130" font-size="14" font-weight="bold" fill="#38BDF8">田 orders</text>
+            <text x="40" y="155" font-size="13" class="cyan-text">id (INT, PK)</text>
+            <text x="40" y="175" font-size="13" class="cyan-text">user_id (INT, FK)</text>
+            <text x="40" y="195" font-size="13" class="cyan-text">total_amount (DECIMAL)</text>
+            <text x="40" y="215" font-size="13" class="cyan-text">region (VARCHAR)</text>
+            <text x="40" y="235" font-size="13" class="cyan-text">order_date (DATE)</text>
+            
+            <text x="20" y="270" font-size="14" class="dim">田 products</text>
+            
+            <text x="0" y="320" font-size="15" class="dim">📂 Views (3)</text>
+            <text x="0" y="360" font-size="15" class="dim">📂 Functions (12)</text>
+        </g>
+    </g>
+    
+    <!-- CENTER PANEL: Query, Code & Results -->
+    <g transform="translate(340, 70)">
+        <rect width="1180" height="1000" rx="16" fill="rgba(15, 23, 42, 0.4)" stroke="rgba(255, 255, 255, 0.05)" stroke-width="1.5" />
+        
+        <!-- Chat Area header -->
+        <text x="40" y="40" font-size="20" font-weight="bold">💬 AI Query Workspace</text>
+        
+        <!-- Chat input block -->
+        <g transform="translate(40, 60)">
+            <rect width="1100" height="60" rx="12" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" />
+            <text x="20" y="36" font-size="16" fill="#E2E8F0">Show monthly revenue by region for 2025</text>
+            <rect x="980" y="10" width="100" height="40" rx="8" fill="url(#blue-cyan)" />
+            <text x="1015" y="35" font-size="14" font-weight="bold">Submit</text>
+        </g>
+        
+        <!-- SQL Editor Panel -->
+        <g transform="translate(40, 145)">
+            <rect width="1100" height="230" rx="12" fill="#030712" stroke="rgba(56, 189, 248, 0.2)" />
+            <!-- Editor Title bar -->
+            <path d="M 0 10 A 10 10 0 0 1 10 0 L 1090 0 A 10 10 0 0 1 1100 10 L 1100 40 L 0 40 Z" fill="rgba(255,255,255,0.03)" />
+            <text x="20" y="26" font-size="14" font-weight="bold" fill="#38BDF8">🤖 Generated SQL (Groq LLM Engine)</text>
+            <rect x="880" y="8" width="200" height="24" rx="6" fill="rgba(16, 185, 129, 0.15)" stroke="rgba(16, 185, 129, 0.3)" stroke-width="1" />
+            <text x="895" y="24" font-size="12" class="emerald-text" font-weight="bold">✓ Self-Healing SQL Repair: Verified</text>
+            
+            <g transform="translate(20, 75)" class="mono" font-size="15">
+                <text x="0" y="0"><tspan class="purple-text">SELECT</tspan> DATE_TRUNC(<tspan class="cyan-text">'month'</tspan>, order_date) <tspan class="purple-text">AS</tspan> order_month,</text>
+                <text x="0" y="25">       region, <tspan class="purple-text">SUM</tspan>(total_amount) <tspan class="purple-text">AS</tspan> monthly_revenue</text>
+                <text x="0" y="50"><tspan class="purple-text">FROM</tspan> orders</text>
+                <text x="0" y="75"><tspan class="purple-text">WHERE</tspan> EXTRACT(<tspan class="purple-text">YEAR FROM</tspan> order_date) = <tspan class="emerald-text">2025</tspan></text>
+                <text x="0" y="100"><tspan class="purple-text">GROUP BY</tspan> 1, 2 <tspan class="purple-text">ORDER BY</tspan> 1 <tspan class="purple-text">ASC</tspan>;</text>
+            </g>
+        </g>
+        
+        <!-- Results Table (left) & Chart (right) side-by-side -->
+        <!-- Results Table -->
+        <g transform="translate(40, 395)">
+            <text x="0" y="25" font-size="16" font-weight="bold" fill="#38BDF8">📋 Query Results</text>
+            <rect y="40" width="480" height="520" rx="12" fill="rgba(15, 23, 42, 0.5)" stroke="rgba(255, 255, 255, 0.05)" />
+            
+            <!-- Table Header -->
+            <rect x="0" y="40" width="480" height="40" fill="rgba(255,255,255,0.02)" />
+            <text x="20" y="65" font-size="13" font-weight="bold" fill="#94A3B8">Month</text>
+            <text x="180" y="65" font-size="13" font-weight="bold" fill="#94A3B8">Region</text>
+            <text x="320" y="65" font-size="13" font-weight="bold" fill="#94A3B8">Revenue ($)</text>
+            <line x1="0" y1="80" x2="480" y2="80" stroke="rgba(255,255,255,0.05)" />
+            
+            <!-- Rows -->
+            <g transform="translate(20, 110)" font-size="13">
+                <text y="0">2025-01</text> <text x="160" y="0">North</text> <text x="300" y="0" class="emerald-text">$124,500</text>
+                <line x1="-20" y1="15" x2="460" y2="15" stroke="rgba(255,255,255,0.03)" />
+                
+                <text y="35">2025-01</text> <text x="160" y="35">South</text> <text x="300" y="35" class="emerald-text">$98,400</text>
+                <line x1="-20" y1="50" x2="460" y2="50" stroke="rgba(255,255,255,0.03)" />
+                
+                <text y="70">2025-02</text> <text x="160" y="70">North</text> <text x="300" y="70" class="emerald-text">$135,200</text>
+                <line x1="-20" y1="85" x2="460" y2="85" stroke="rgba(255,255,255,0.03)" />
+                
+                <text y="105">2025-02</text> <text x="160" y="105">South</text> <text x="300" y="105" class="emerald-text">$102,100</text>
+                <line x1="-20" y1="120" x2="460" y2="120" stroke="rgba(255,255,255,0.03)" />
+                
+                <text y="140">2025-03</text> <text x="160" y="140">North</text> <text x="300" y="140" class="emerald-text">$182,600</text>
+                <line x1="-20" y1="155" x2="460" y2="155" stroke="rgba(255,255,255,0.03)" />
+                
+                <text y="175">2025-03</text> <text x="160" y="175">South</text> <text x="300" y="175" class="emerald-text">$118,900</text>
+                <line x1="-20" y1="190" x2="460" y2="190" stroke="rgba(255,255,255,0.03)" />
+            </g>
+        </g>
+        
+        <!-- Charts Visualizer -->
+        <g transform="translate(540, 395)">
+            <text x="0" y="25" font-size="16" font-weight="bold" fill="#38BDF8">📊 Interactive Chart</text>
+            <rect y="40" width="600" height="520" rx="12" fill="rgba(15, 23, 42, 0.5)" stroke="rgba(255, 255, 255, 0.05)" />
+            
+            <!-- Mini Chart plot -->
+            <g transform="translate(60, 100)" opacity="0.4">
+                <line x1="0" y1="300" x2="480" y2="300" stroke="#64748B" />
+                <line x1="0" y1="200" x2="480" y2="200" stroke="#64748B" stroke-dasharray="4 4" />
+                <line x1="0" y1="100" x2="480" y2="100" stroke="#64748B" stroke-dasharray="4 4" />
+            </g>
+            
+            <path d="M 120 380 L 210 320 L 300 180 L 390 250 L 480 120" fill="none" stroke="url(#blue-cyan)" stroke-width="4" filter="url(#glow-cyan)" />
+            <path d="M 120 400 L 210 350 L 300 310 L 390 230 L 480 180" fill="none" stroke="url(#purple-pink)" stroke-width="4" />
+            
+            <g transform="translate(60, 430)" font-size="12" class="dim">
+                <text x="50" y="0">Jan</text>
+                <text x="140" y="0">Feb</text>
+                <text x="230" y="0">Mar</text>
+                <text x="320" y="0">Apr</text>
+                <text x="410" y="0">May</text>
+            </g>
+        </g>
+    </g>
+    
+    <!-- RIGHT PANEL: AI Insights Engine -->
+    <g transform="translate(1530, 70)">
+        <rect width="380" height="1000" rx="16" fill="rgba(15, 23, 42, 0.6)" stroke="rgba(255, 255, 255, 0.05)" stroke-width="1.5" />
+        <text x="25" y="40" font-size="18" font-weight="bold" fill="url(#purple-pink)">AI Insights Engine</text>
+        <line x1="25" y1="60" x2="355" y2="60" stroke="rgba(255,255,255,0.05)" />
+        
+        <!-- Confidence Score dial -->
+        <g transform="translate(20, 80)">
+            <rect width="340" height="100" rx="12" fill="rgba(16, 185, 129, 0.05)" stroke="rgba(16, 185, 129, 0.2)" />
+            <text x="20" y="35" font-size="14" class="dim">AI Confidence Score</text>
+            <text x="20" y="75" font-size="36" font-weight="bold" fill="#10B981">98.2% <tspan font-size="16" fill="#94A3B8" font-weight="normal">(High Confidence)</tspan></text>
+        </g>
+        
+        <!-- Executive Summary -->
+        <g transform="translate(20, 200)">
+            <text x="5" y="25" font-size="16" font-weight="bold" fill="#38BDF8">Executive Summary</text>
+            <rect y="40" width="340" height="420" rx="12" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)" />
+            
+            <g transform="translate(15, 75)" font-size="13">
+                <circle cx="10" cy="10" r="4" fill="#3B82F6" />
+                <text x="25" y="15" font-weight="bold">Revenue Spike in March</text>
+                <text x="25" y="40" class="dim">North region sales grew by 45% due to</text>
+                <text x="25" y="60" class="dim">promotional campaign conversion.</text>
+                
+                <circle cx="10" cy="110" r="4" fill="#8B5CF6" />
+                <text x="25" y="115" font-weight="bold">Q2 Expansion Trend</text>
+                <text x="25" y="140" class="dim">South region shows a steady 8% MoM</text>
+                <text x="25" y="160" class="dim">growth through June.</text>
+                
+                <circle cx="10" cy="210" r="4" fill="#10B981" />
+                <text x="25" y="215" font-weight="bold">Recommendations</text>
+                <text x="25" y="240" class="dim">1. Shift inventory focus to North.</text>
+                <text x="25" y="260" class="dim">2. Replicate campaign in South.</text>
+            </g>
+        </g>
+        
+        <!-- Suggested Follow-up Questions -->
+        <g transform="translate(20, 650)">
+            <text x="5" y="25" font-size="16" font-weight="bold" fill="#94A3B8">Suggested Follow-ups</text>
+            
+            <g transform="translate(0, 40)" font-size="13">
+                <rect width="340" height="50" rx="10" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)" />
+                <text x="15" y="30">❓ What products drove March sales in North?</text>
+                
+                <rect y="65" width="340" height="50" rx="10" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)" />
+                <text x="15" y="95">❓ Compare 2025 revenue against 2024</text>
+            </g>
+        </g>
+    </g>
+</svg>

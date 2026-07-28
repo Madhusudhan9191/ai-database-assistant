@@ -255,7 +255,7 @@ useState(() =>
   const handleSaveReportConfirm = async (reportName) => {
     if (!pendingReportData) return;
     try {
-      const res = await fetch(API_BASE_URL + "/saved-reports", {
+      const res = await fetch(API_BASE_URL + "/reports", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -283,12 +283,6 @@ useState(() =>
   );
 }, [settings]);
 
-  useEffect(() => {
-  localStorage.setItem(
-    "query-history",
-    JSON.stringify(queryHistory)
-  );
-}, [queryHistory]);
 
 
 

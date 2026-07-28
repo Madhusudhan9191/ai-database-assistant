@@ -97,6 +97,7 @@ function ChatArea({
   onSaveReport,
   onAddFavorite,
 }) {
+  const [dryRun, setDryRun] = useState(false);
   const messagesEndRef = useRef(null);
 
   useEffect(() => {
@@ -141,6 +142,10 @@ function ChatArea({
             {msg.role === "assistant" &&
               !msg.error && (
               <div className="assistant-message">
+                {msg.query_analysis && (
+                  <QueryAnalysis analysis={msg.query_analysis} />
+                )}
+
                 {msg.explanation && (
                   <div className="query-explanation">
                     💡 {msg.explanation}
@@ -397,7 +402,7 @@ function ChatArea({
               e.target.value
             )
           }
-          placeholder="Ask your database anything..."
+          placeholder={dryRun ? "🛡️ Dry-Run Mode: Test & validate SQL safety..." : "Ask your database anything..."}
           onKeyDown={(e) => {
             if (e.key === "Enter") {
               handleQuery();
@@ -406,10 +411,31 @@ function ChatArea({
         />
 
         <button
+          type="button"
+          className={`dry-run-toggle ${dryRun ? "active" : ""}`}
+          onClick={() => setDryRun(!dryRun)}
+          title={dryRun ? "Dry-Run Active (Validation Only)" : "Switch to Dry-Run Mode"}
+          style={{
+            background: dryRun ? "rgba(234, 179, 8, 0.2)" : "transparent",
+            color: dryRun ? "#eab308" : "#888",
+            border: "1px solid " + (dryRun ? "#eab308" : "#444"),
+            borderRadius: "8px",
+            padding: "6px 12px",
+            fontSize: "12px",
+            marginRight: "8px",
+            cursor: "pointer"
+          }}
+        >
+          {dryRun ? "🛡️ Dry-Run" : "⚡ Live"}
+        </button>
+
+        <button
           onClick={() => handleQuery()}
         >
           {loading
             ? "Running..."
+            : dryRun
+            ? "Validate SQL"
             : "Ask AI"}
         </button>
       </div>
